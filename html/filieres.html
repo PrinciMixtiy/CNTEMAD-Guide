@@ -1,151 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../css/style.css" />
-        <title>Guide CNTEMAD 2</title>
-    </head>
-    <body>
-        <header>
-            <nav id="header-nav" class="hidden">
-                <ul>
-                    <li>
-                        <a href="../index.html" class="group">
-                            Accueil
-                            <span
-                                class="scale-x-0 group-hover:scale-x-100"
-                            ></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="filieres.html" class="group">
-                            Filières
-                            <span
-                                class="scale-x-0 group-hover:scale-x-100"
-                            ></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="cursus.html" class="group">
-                            Cursus
-                            <span
-                                class="scale-x-0 group-hover:scale-x-100"
-                            ></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="atomes.html" class="group">
-                            Livres
-                            <span
-                                class="scale-x-0 group-hover:scale-x-100"
-                            ></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="inscription.html" class="group">
-                            Inscription
-                            <span
-                                class="scale-x-0 group-hover:scale-x-100"
-                            ></span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <button
-                id="header-arrow-button"
-                class="md:hidden block"
-                onclick="toggle_header()"
-            >
-                🔽
-            </button>
-        </header>
-        <main>
-            <h1 class="title0">FILIERES</h1>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // GitHub Dark inspired palette
+                        'gh-bg': '#0d1117',
+                        'gh-bg-secondary': '#161b22',
+                        'gh-bg-tertiary': '#21262d',
+                        'gh-border': '#30363d',
+                        'gh-text': '#f0f6fc',
+                        'gh-text-secondary': '#8b949e',
+                        'gh-text-muted': '#656d76',
+                        'gh-accent-blue': '#58a6ff',
+                        'gh-accent-purple': '#a5a3ff',
+                        'gh-accent-green': '#56d364',
+                        'gh-accent-orange': '#ffa657',
+                        'gh-accent-red': '#f85149',
+                        'gh-accent-yellow': '#e3b341',
+                        // University themed colors
+                        'university-blue': '#4f46e5',
+                        'university-gold': '#f59e0b',
+                        'university-navy': '#1e3a8a',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>CNTEMAD - Filières</title>
+</head>
+<body class="bg-gh-bg text-gh-text min-h-screen">
+    <!-- Header -->
+    <header class="bg-gh-bg-secondary border-b border-gh-border sticky top-0 z-50 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Brand -->
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-gh-accent-blue">CNTEMAD</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-1">
+                    <a href="../index.html" class="text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                        Accueil
+                    </a>
+                    <a href="filieres.html" class="text-gh-text bg-gh-bg-tertiary px-3 py-2 rounded-md text-sm font-medium border border-gh-border">
+                        Filières
+                    </a>
+                    <a href="cursus.html" class="text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                        Cursus
+                    </a>
+                    <a href="atomes.html" class="text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                        Livres
+                    </a>
+                    <a href="inscription.html" class="text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                        Inscription
+                    </a>
+                    <a href="paiement.html" class="text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                        Paiement
+                    </a>
+                </nav>
 
-            <section class="p-4 md:mx-8">
-                <h2 class="title1">
-                    Le CNTEMAD dispense des formations dans deux domaines
-                </h2>
-                <section class="grid md:grid-cols-2 gap-4">
-                    <table class="table-dark">
-                        <caption>
-                            Sciences de la Société
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td><a href="#">DROIT</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">COMMERCE</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">ECONOMIE</a></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#">INFORMATION ET COMMUNICATION</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table-dark">
-                        <caption>
-                            Sciences de l'Ingénieur
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td><a href="#">INFORMATIQUE</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">GENIE INDUSTRIEL</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">TELECOMMUNICATIONS</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-            </section>
-        </main>
-        <footer>
-            <div>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gh-accent-blue">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gh-bg-secondary border-t border-gh-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary block px-3 py-2 rounded-md text-base font-medium">Accueil</a>
+                <a href="filieres.html" class="text-gh-text bg-gh-bg-tertiary block px-3 py-2 rounded-md text-base font-medium border border-gh-border">Filières</a>
+                <a href="cursus.html" class="text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary block px-3 py-2 rounded-md text-base font-medium">Cursus</a>
+                <a href="atomes.html" class="text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary block px-3 py-2 rounded-md text-base font-medium">Livres</a>
+                <a href="inscription.html" class="text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary block px-3 py-2 rounded-md text-base font-medium">Inscription</a>
+                <a href="paiement.html" class="text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary block px-3 py-2 rounded-md text-base font-medium">Paiement</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Page Title -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-gh-text mb-4 bg-gradient-to-r from-gh-accent-blue to-gh-accent-purple bg-clip-text text-transparent">FILIÈRES</h1>
+            <div class="w-24 h-1 bg-gh-accent-blue mx-auto rounded-full mb-6"></div>
+            <p class="text-lg text-gh-text-secondary max-w-3xl mx-auto">
+                Découvrez nos formations d'excellence dans deux grands domaines d'études, 
+                conçues pour répondre aux besoins du marché du travail moderne et vous préparer 
+                à une carrière prometteuse.
+            </p>
+        </div>
+
+        <!-- Statistics Section -->
+        <div class="bg-gradient-to-r from-university-blue to-gh-accent-purple rounded-xl text-gh-text p-8 mb-16 border border-gh-border">
+            <div class="grid md:grid-cols-4 gap-6 text-center">
                 <div>
-                    <ul>
-                        <li>MADAGASCAR</li>
-                        <li>Antananarivo - 101</li>
-                        <li>Lot IVC 6 - Ambomitsangana</li>
-                        <li>B.P.78</li>
-                    </ul>
+                    <div class="text-3xl font-bold mb-2">7</div>
+                    <div class="text-gh-text-secondary">Filières disponibles</div>
                 </div>
                 <div>
-                    <ul>
-                        <li>
-                            <a
-                                href="tel:+261 20 22 600 57"
-                                class="hover:text-primary hover:underline"
-                                >Tel : +261 20 22 600 57</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="mailto:cntemad@cntemad.com"
-                                class="hover:text-primary hover:underline"
-                                >Email : cntemad@cntemad.com</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href=""
-                                class="hover:text-primary hover:underline"
-                                >Facebook : CNTEMAD Ofisialy</a
-                            >
-                        </li>
-                    </ul>
+                    <div class="text-3xl font-bold mb-2">2</div>
+                    <div class="text-gh-text-secondary">Domaines d'études</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold mb-2">30+</div>
+                    <div class="text-gh-text-secondary">Années d'expérience</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold mb-2">48</div>
+                    <div class="text-gh-text-secondary">Centres à Madagascar</div>
                 </div>
             </div>
-            <p>CNTEMAD</p>
-        </footer>
-        <script src="../js/script.js"></script>
-    </body>
+        </div>
+
+        <!-- Introduction Section -->
+        <div class="bg-gh-bg-secondary rounded-xl border border-gh-border p-6 md:p-8 mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold text-gh-text text-center mb-8">
+                Le CNTEMAD dispense des formations dans deux domaines
+            </h2>
+            
+            <div class="prose max-w-none text-gh-text-secondary mb-8">
+                <p class="text-lg leading-relaxed text-center">
+                    Nos programmes d'études sont conçus pour former des professionnels compétents et polyvalents, 
+                    capables de s'adapter aux évolutions technologiques et économiques. Chaque filière propose 
+                    un cursus complet du niveau Licence au niveau Master, avec des contenus pédagogiques 
+                    régulièrement mis à jour.
+                </p>
+            </div>
+            
+            <!-- Methodology Section -->
+            <div class="bg-gradient-to-r from-gh-bg-tertiary to-gh-bg-secondary rounded-xl p-6 md:p-8 mb-12 border border-gh-accent-purple">
+                <h2 class="text-2xl font-bold text-center text-gh-accent-purple mb-8">Notre Méthodologie d'Enseignement</h2>
+                
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-bold text-gh-accent-blue mb-4">🎯 Principe Fondamental</h3>
+                        <p class="text-gh-text-secondary leading-relaxed">
+                            En enseignement supérieur à distance, <strong class="text-gh-text">l'apprenant est l'artisan de sa formation</strong>. 
+                            Les supports didactiques préconçus par nos concepteurs constituent les sources du transfert du savoir 
+                            et sont mis à votre disposition.
+                        </p>
+                        
+                        <div class="bg-gh-bg-secondary rounded-lg p-4 border border-gh-border">
+                            <h4 class="font-semibold text-gh-text mb-2">✨ Avantages clés :</h4>
+                            <ul class="text-sm text-gh-text-secondary space-y-1">
+                                <li>• Horaires d'études flexibles</li>
+                                <li>• Conciliation vie professionnelle/familiale</li>
+                                <li>• Pas de présence permanente en salle</li>
+                                <li>• Dispositif simple de formation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-bold text-gh-accent-green mb-4">💪 Qualités Requises</h3>
+                        <div class="bg-gh-bg-secondary rounded-lg p-4 border border-gh-border">
+                            <p class="text-gh-text-secondary text-sm mb-3">
+                                <strong class="text-gh-text">Une bonne organisation des études de façon autonome</strong> est la première qualité requise 
+                                pour garantir un cursus universitaire réussi.
+                            </p>
+                            
+                            <h4 class="font-semibold text-gh-text mb-2">Vous devez développer :</h4>
+                            <ul class="text-sm text-gh-text-secondary space-y-1">
+                                <li>• Un système d'apprentissage personnel</li>
+                                <li>• Une démarche d'études structurée</li>
+                                <li>• Des compétences de recherche</li>
+                                <li>• Une gestion efficace du temps</li>
+                                <li>• <strong class="text-gh-accent-orange">Une motivation extrême</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 text-center">
+                    <div class="bg-gradient-to-r from-gh-accent-green to-university-blue text-gh-bg rounded-lg p-4">
+                        <p class="font-medium">
+                            🌟 L'enseignement à distance : un apport considérable et incontournable 
+                            pour le développement de Madagascar
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Sciences de la Société -->
+                <div class="bg-gradient-to-br from-gh-bg-tertiary to-gh-bg-secondary rounded-xl p-6 border border-gh-accent-blue hover:border-gh-accent-purple transition-all duration-300 group">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gh-accent-blue rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-gh-accent-purple transition-colors duration-300">
+                            <svg class="w-8 h-8 text-gh-bg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gh-text bg-gh-bg-secondary px-4 py-2 rounded-lg border border-gh-border inline-block">
+                            Sciences de la Société
+                        </h3>
+                        <p class="text-gh-accent-blue mt-3 text-sm">
+                            Formations orientées vers les sciences humaines, juridiques et économiques
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="bg-gh-bg-secondary hover:bg-gh-bg-tertiary rounded-lg border border-gh-border hover:border-gh-accent-blue transition-all duration-200 overflow-hidden">
+                            <a href="#droit" class="block p-4">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h4 class="font-bold text-gh-text hover:text-gh-accent-blue">DROIT</h4>
+                                        <p class="text-sm text-gh-text-secondary">Droit public, privé, des affaires</p>
+                                    </div>
+                                    <svg class="w-5 h-5 text-gh-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="bg-gh-bg-secondary hover:bg-gh-bg-tertiary rounded-lg border border-gh-border hover:border-gh-accent-blue transition-all duration-200 overflow-hidden">
+                            <a href="#commerce" class="block p-4">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h4 class="font-bold text-gh-text hover:text-gh-accent-blue">COMMERCE</h4>
+                                        <p class="text-sm text-gh-text-secondary">Marketing, vente, commerce international</p>
+                                    </div>
+                                    <svg class="w-5 h-5 text-gh-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="bg-gh-bg-secondary hover:bg-gh-bg-tertiary rounded-lg border border-gh-border hover:border-gh-accent-blue transition-all duration-200 overflow-hidden">
+                            <a href="#economie" class="block p-4">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h4 class="font-bold text-gh-text hover:text-gh-accent-blue">ÉCONOMIE</h4>
+                                        <p class="text-sm text-gh-text-secondary">Analyse économique, développement</p>
+                                    </div>
+                                    <svg class="w-5 h-5 text-gh-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="bg-gh-bg-secondary hover:bg-gh-bg-tertiary rounded-lg border border-gh-border hover:border-gh-accent-blue transition-all duration-200 overflow-hidden">
+                            <a href="#communication" class="block p-4">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h4 class="font-bold text-gh-text hover:text-gh-accent-blue">INFORMATION ET COMMUNICATION</h4>
+                                        <p class="text-sm text-gh-text-secondary">Médias, journalisme, communication digitale</p>
+                                    </div>
+                                    <svg class="w-5 h-5 text-gh-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sciences de l'Ingénieur -->
+                <div class="bg-gradient-to-br from-gh-bg-tertiary to-gh-bg-secondary rounded-xl p-6 border border-gh-accent-green hover:border-gh-accent-orange transition-all duration-300 group">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gh-accent-green rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-gh-accent-orange transition-colors duration-300">
+                            <svg class="w-8 h-8 text-gh-bg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gh-text bg-gh-bg-secondary px-4 py-2 rounded-lg border border-gh-border inline-block">
+                            Sciences de l'Ingénieur
+                        </h3>
+                        <p class="text-gh-accent-green mt-3 text-sm">
+                            Formations techniques et technologiques d'avant-garde
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="bg-gh-bg-secondary hover:bg-gh-bg-tertiary rounded-lg border border-gh-border hover:border-gh-accent-green transition-all duration-200 overflow-hidden">
+                            <a href="informatique-detail.html" class="block p-4">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h4 class="font-bold text-gh-text hover:text-gh-accent-green">INFORMATIQUE</h4>
+                                        <p class="text-sm text-gh-text-secondary">Développement, réseaux, base de données</p>
+                                    </div>
+                                    <svg class="w-5 h-5 text-gh-accent-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="bg-gh-bg-secondary hover:bg-gh-bg-tertiary rounded-lg border border-gh-border hover:border-gh-accent-green transition-all duration-200 overflow-hidden">
+                            <a href="#genie-industriel" class="block p-4">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h4 class="font-bold text-gh-text hover:text-gh-accent-green">GÉNIE INDUSTRIEL</h4>
+                                        <p class="text-sm text-gh-text-secondary">Production, qualité, logistique</p>
+                                    </div>
+                                    <svg class="w-5 h-5 text-gh-accent-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="bg-gh-bg-secondary hover:bg-gh-bg-tertiary rounded-lg border border-gh-border hover:border-gh-accent-green transition-all duration-200 overflow-hidden">
+                            <a href="#telecommunications" class="block p-4">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h4 class="font-bold text-gh-text hover:text-gh-accent-green">TÉLÉCOMMUNICATIONS</h4>
+                                        <p class="text-sm text-gh-text-secondary">Réseaux, systèmes de communication</p>
+                                    </div>
+                                    <svg class="w-5 h-5 text-gh-accent-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="bg-gradient-to-r from-university-blue to-gh-accent-purple rounded-xl border border-gh-border overflow-hidden">
+            <div class="md:flex items-center">
+                <div class="md:w-2/3 p-8 md:p-12">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gh-text mb-4">
+                        Prêt à choisir votre filière ?
+                    </h2>
+                    <p class="text-gh-text-secondary mb-6">
+                        Découvrez nos cursus détaillés et les modalités d'inscription pour commencer 
+                        votre parcours académique au CNTEMAD.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="cursus.html" class="bg-gh-text text-gh-bg hover:bg-gh-text-secondary px-6 py-3 rounded-lg font-medium border border-gh-border transition-colors duration-200">
+                            Voir les cursus
+                        </a>
+                        <a href="inscription.html" class="bg-transparent text-gh-text hover:bg-gh-bg-tertiary border border-gh-border px-6 py-3 rounded-lg font-medium transition-colors duration-200">
+                            S'inscrire
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:block md:w-1/3 p-8">
+                    <div class="text-center">
+                        <div class="w-32 h-32 bg-white bg-opacity-10 rounded-full flex items-center justify-center mx-auto border border-gh-border">
+                            <svg class="w-16 h-16 text-gh-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gh-bg-secondary border-t border-gh-border mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Address -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-gh-text">Adresse</h3>
+                    <div class="space-y-2 text-gh-text-secondary">
+                        <p>MADAGASCAR</p>
+                        <p>Antananarivo - 101</p>
+                        <p>Lot IVC 6 - Ambomitsangana</p>
+                        <p>B.P.78</p>
+                    </div>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-gh-text">Contact</h3>
+                    <div class="space-y-2">
+                        <a href="tel:+261 20 22 600 57" class="text-gh-text-secondary hover:text-gh-accent-blue transition-colors duration-200 block">
+                            Tél : +261 20 22 600 57
+                        </a>
+                        <a href="mailto:cntemad@cntemad.com" class="text-gh-text-secondary hover:text-gh-accent-blue transition-colors duration-200 block">
+                            Email : cntemad@cntemad.com
+                        </a>
+                        <a href="#" class="text-gh-text-secondary hover:text-gh-accent-blue transition-colors duration-200 block">
+                            Facebook : CNTEMAD Officiel
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gh-border mt-8 pt-8 text-center">
+                <p class="text-gh-text-muted">&copy; 2024 CNTEMAD. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
 </html>

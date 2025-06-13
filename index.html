@@ -1,284 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.css" />
-        <title>Guide CNTEMAD 2</title>
-    </head>
-    <body>
-        <header>
-            <nav id="header-nav" class="hidden">
-                <ul>
-                    <li>
-                        <a href="index.html" class="group">
-                            Accueil
-                            <span
-                                class="scale-x-0 group-hover:scale-x-100"
-                            ></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="html/filieres.html" class="group">
-                            Filières
-                            <span
-                                class="scale-x-0 group-hover:scale-x-100"
-                            ></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="html/cursus.html" class="group">
-                            Cursus
-                            <span
-                                class="scale-x-0 group-hover:scale-x-100"
-                            ></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="html/atomes.html" class="group">
-                            Livres
-                            <span
-                                class="scale-x-0 group-hover:scale-x-100"
-                            ></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="html/inscription.html" class="group">
-                            Inscription
-                            <span
-                                class="scale-x-0 group-hover:scale-x-100"
-                            ></span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <button
-                id="header-arrow-button"
-                class="md:hidden block"
-                onclick="toggle_header()"
-            >
-                🔽
-            </button>
-        </header>
-        <main>
-            <h1 class="title0">GUIDE DE L'ETUDIANT DU CNTEMAD</h1>
-            <section class="flex md:flex-row flex-col justify-evenly">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 47.5 47.5"
-                    id="book-icon"
-                    width="300px"
-                    class="mx-auto md:mx-4"
-                >
-                    <defs>
-                        <clipPath id="a">
-                            <path d="M0 38h38V0H0v38Z"></path>
-                        </clipPath>
-                    </defs>
-                    <g
-                        clip-path="url(#a)"
-                        transform="matrix(1.25 0 0 -1.25 0 47.5)"
-                    >
-                        <path
-                            fill="#269"
-                            d="M33 30H5a4 4 0 0 1-4-4V11a4 4 0 0 1 4-4h11.416c.52-.596 1.477-1 2.584-1s2.064.404 2.584 1H33a4 4 0 0 1 4 4v15a4 4 0 0 1-4 4"
-                        ></path>
-                        <path
-                            fill="#292f33"
-                            d="M21 10a2 2 0 0 0-4 0v18a2 2 0 0 0 4 0V10Z"
-                        ></path>
-                        <path
-                            fill="#99aab5"
-                            d="M19 11a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V11Z"
-                        ></path>
-                        <path
-                            fill="#e1e8ed"
-                            d="M19 11c-.999 1.998-3.657 2-4 2-2 0-5-2-8-2-1 0-2 .896-2 2v16c0 1.104 1 2 2 2 3.255 0 6 2 8 2 3 0 4-1.896 4-3V11Z"
-                        ></path>
-                        <path
-                            fill="#99aab5"
-                            d="M35 11a2 2 0 0 0-2-2H21a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V11Z"
-                        ></path>
-                        <path
-                            fill="#ccd6dd"
-                            d="M19 11c.999 1.998 3.657 2 4 2 2 0 5-2 8-2 1 0 2 .896 2 2v16c0 1.104-1 2-2 2-3.256 0-6 2-8 2-3 0-4-1.896-4-3V11Z"
-                        ></path>
-                    </g>
-                </svg>
-                <section class="p-4 md:mr-4 max-w-[800px]">
-                    <h2 class="title1">PRESENTATION DU CENTRE</h2>
-                    <p>
-                        Pionnier de l'enseignement à distance à Madagascar, le
-                        <strong
-                            >Centre National de Télé-Enseignement de
-                            Madagascar</strong
-                        >
-                        est créé en 1992 sous la tutelle technique du
-                        <strong
-                            >Ministère de l'Enseignement Supérieur et de la
-                            Recherche Scientifique</strong
-                        >.
-                    </p>
-                    <p>
-                        Conçue initialement pour accueillir les promotions de
-                        nouveux bacheliers suite à la crise socio-politique des
-                        années 1990, cette formation à distance est aussi
-                        accessible à tous ceux qui - nationaux ou étrangers -
-                        veulent librement approfondir leurs savoirs académiques
-                        ou professionnels sans avoir à subir les contraintes de
-                        la formation présentielle.
-                    </p>
-                    <p>
-                        D'envergure nationale, le
-                        <strong
-                            >Centre National de Télé-Enseignementde Madagascar
-                            (CNTEMAD)</strong
-                        >
-                        est composé, outre le Centre Régional d'Antananarivo, de
-                        <em>34 Centres Régionaux et de 14 Antennes</em>
-                        implantés dans les Chefs-lieux d'ex-préfectures et au
-                        niveau des districts.Ainsi, il réduit l'exode rural
-                        permettant aux jeunes bacheliers de poursuivre leurs
-                        études dans leur localité, résolvant également de la
-                        sorte l'éloignement géographique et allégeant en même
-                        temps les charges familiales.
-                    </p>
-                    <p>
-                        Il offre, par ailleurs, aux travailleurs l'opportunité
-                        de réactualiser les acquis professionnels et d'enrichir
-                        les connaissances intellectuelles afin de s'assurer une
-                        belle carière. Et ceux qui ne peuvent pas assister aux
-                        cours en salle pour diverses raisons (incapacité
-                        physique, emploi sédentaire, …) ont la possibilité de
-                        continuer leurs études supérieurs via les formations
-                        offertes parle
-                        <strong>CNTEMAD</strong>.
-                    </p>
-                    <p>
-                        Les sortants du
-                        <strong
-                            >Centre National de Télé-Enseignement de
-                            Madagascar</strong
-                        >
-                        peuvent intégrer le milieu du travail en se distinguant
-                        de parleur formation d'autodidacte.
-                    </p>
-                    <p>
-                        Le <strong>CNTEMAD</strong> est régi sous
-                        l'administration d'un Conseil composé par des
-                        représentants ministériels (MESupReS, MFPLTS), de la
-                        Fédération des Chambres du Commerce et de l'industrie
-                        Malagasy et des représentants des Six Universités
-                        publiques (Président et Directeur de chaque
-                        établissement concerné par la formation à distance).
-                    </p>
-                </section>
-            </section>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // GitHub Dark inspired palette
+                        'gh-bg': '#0d1117',
+                        'gh-bg-secondary': '#161b22',
+                        'gh-bg-tertiary': '#21262d',
+                        'gh-border': '#30363d',
+                        'gh-text': '#f0f6fc',
+                        'gh-text-secondary': '#8b949e',
+                        'gh-text-muted': '#656d76',
+                        'gh-accent-blue': '#58a6ff',
+                        'gh-accent-purple': '#a5a3ff',
+                        'gh-accent-green': '#56d364',
+                        'gh-accent-orange': '#ffa657',
+                        'gh-accent-red': '#f85149',
+                        'gh-accent-yellow': '#e3b341',
+                        // University themed colors
+                        'university-blue': '#4f46e5',
+                        'university-gold': '#f59e0b',
+                        'university-navy': '#1e3a8a',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>CNTEMAD - Guide de l'Étudiant</title>
+</head>
+<body class="bg-gh-bg text-gh-text min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-gh-bg-secondary border-b border-gh-border sticky top-0 z-50 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Brand -->
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-gh-accent-blue">CNTEMAD</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-1">
+                    <a href="index.html" class="text-gh-text bg-gh-bg-tertiary px-3 py-2 rounded-md text-sm font-medium border border-gh-border">
+                        Accueil
+                    </a>
+                    <a href="html/filieres.html" class="text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                        Filières
+                    </a>
+                    <a href="html/cursus.html" class="text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                        Cursus
+                    </a>
+                    <a href="html/atomes.html" class="text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                        Livres
+                    </a>
+                    <a href="html/inscription.html" class="text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                        Inscription
+                    </a>
+                    <a href="html/paiement.html" class="text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                        Paiement
+                    </a>
+                </nav>
 
-            <div
-                class="flex justify-end absolute bottom-60 md:bottom-40 right-0"
-            >
-                <button
-                    id="toggle_mot_dir_nat"
-                    class="absolute bottom-0 w-[50px] h-[50px] bg-slate-900 text-primary font-bold rounded-full m-4 border-2 border-primary z-50"
-                >
-                    !
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gh-accent-blue">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
                 </button>
-                <div
-                    id="mot_dir_nat"
-                    class="hidden absolute right-0 bottom-10 w-[360px] h-[400px] overflow-y-auto bg-white border-2 shadow-2xl p-4 rounded-lg"
-                >
-                    <h1 class="title1">MOT DU DIRECTEUR NATIONAL</h1>
-                    <blockquote class="content">
-                        <p>
-                            Etant le pionnier de l'enseignement à distance à
-                            Madagascar, le CNTEMAD entend aujourd'hui faire
-                            profiter à ses apprenants, d'une manière optimal, de
-                            ses 29 ans d'expériences dans ce domaine. L'éventail
-                            de formations qu'il propose a été établi de façon à
-                            répondre au mieux l'évolution des exigences de
-                            l'enseignement et du monde professionnel. Se même,
-                            les modalités d'organisation pédagogique et
-                            administrative de l'enseignement a été aménagées
-                            pour s'assurer que les apprenants à distance
-                            puissent suivre leur formation malgré leurs diverses
-                            contraintes quotidiennes généralement constatées.
-                        </p>
-                        <p>
-                            Toutefois, pour garantir sa réussite et comme en est
-                            la spécialité du télé-enseignement, l'apprenant doit
-                            se joindre à ces expériences acquises du CNTEMAD, sa
-                            détermination et son autodiscipline.
-                        </p>
-                        <p>
-                            Dès lors, cher apprenant, je souhaite que nos
-                            expériences, reflétées à travers nos instruments
-                            pédagogiques vous servent de guide, suscitent en
-                            vous cette détermination et son autodisciplin qui
-                            sont des conditions décisives de votre réussite.
-                        </p>
-                        <p>
-                            Que cette année universitaire, un bateau dans
-                            laquelle nous nous embarquons ensemble, soit une
-                            réussite pour vous, afin de l'être aussi pour le
-                            CNTEMAD!
-                        </p>
-                        <cite class="font-bold p-4">
-                            <h3>Josa Augustina JAONARY</h3>
-                            <h4>Docteur en Sciences Économiques</h4>
-                            <h4>Maître de Conférences</h4>
-                        </cite>
-                    </blockquote>
-                </div>
             </div>
-        </main>
-        <footer>
-            <div>
-                <div>
-                    <ul>
-                        <li>MADAGASCAR</li>
-                        <li>Antananarivo - 101</li>
-                        <li>Lot IVC 6 - Ambomitsangana</li>
-                        <li>B.P.78</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <a
-                                href="tel:+261 20 22 600 57"
-                                class="hover:text-primary hover:underline"
-                                >Tel : +261 20 22 600 57</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="mailto:cntemad@cntemad.com"
-                                class="hover:text-primary hover:underline"
-                                >Email : cntemad@cntemad.com</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href=""
-                                class="hover:text-primary hover:underline"
-                                >Facebook : CNTEMAD Ofisialy</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <p>CNTEMAD</p>
-        </footer>
-        <script>
-            let button_mot_dir_nat =
-                document.getElementById("toggle_mot_dir_nat");
-            let mot_dir_nat = document.getElementById("mot_dir_nat");
+        </div>
 
-            button_mot_dir_nat.addEventListener('click', function() {
-                mot_dir_nat.classList.toggle('hidden');
-            });
-        </script>
-        <script src="js/script.js"></script>
-    </body>
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gh-bg-secondary border-t border-gh-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="text-gh-text bg-gh-bg-tertiary block px-3 py-2 rounded-md text-base font-medium border border-gh-border">Accueil</a>
+                <a href="html/filieres.html" class="text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary block px-3 py-2 rounded-md text-base font-medium">Filières</a>
+                <a href="html/cursus.html" class="text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary block px-3 py-2 rounded-md text-base font-medium">Cursus</a>
+                <a href="html/atomes.html" class="text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary block px-3 py-2 rounded-md text-base font-medium">Livres</a>
+                <a href="html/inscription.html" class="text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary block px-3 py-2 rounded-md text-base font-medium">Inscription</a>
+                <a href="html/paiement.html" class="text-gh-text-secondary hover:text-gh-text hover:bg-gh-bg-tertiary block px-3 py-2 rounded-md text-base font-medium">Paiement</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-br from-university-navy via-gh-bg-secondary to-gh-bg-tertiary text-gh-text py-16 border-b border-gh-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gh-accent-blue to-gh-accent-purple bg-clip-text text-transparent">
+                GUIDE DE L'ÉTUDIANT DU CNTEMAD
+            </h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto text-gh-text-secondary">
+                Bienvenue au Centre National de Télé-Enseignement de Madagascar, pionnier de l'enseignement à distance depuis 1992.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-gh-bg-secondary rounded-xl border border-gh-border overflow-hidden">
+            <div class="md:flex">
+                <!-- Book Icon Section -->
+                <div class="md:w-1/3 bg-gradient-to-br from-gh-bg-tertiary to-gh-bg-secondary p-8 flex items-center justify-center border-r border-gh-border">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.5 47.5" width="200" height="200" class="transform transition-transform duration-500 hover:scale-110">
+                        <defs>
+                            <clipPath id="a">
+                                <path d="M0 38h38V0H0v38Z"></path>
+                            </clipPath>
+                        </defs>
+                        <g clip-path="url(#a)" transform="matrix(1.25 0 0 -1.25 0 47.5)">
+                            <path fill="#58a6ff" d="M33 30H5a4 4 0 0 1-4-4V11a4 4 0 0 1 4-4h11.416c.52-.596 1.477-1 2.584-1s2.064.404 2.584 1H33a4 4 0 0 1 4 4v15a4 4 0 0 1-4 4"></path>
+                            <path fill="#21262d" d="M21 10a2 2 0 0 0-4 0v18a2 2 0 0 0 4 0V10Z"></path>
+                            <path fill="#30363d" d="M19 11a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V11Z"></path>
+                            <path fill="#8b949e" d="M19 11c-.999 1.998-3.657 2-4 2-2 0-5-2-8-2-1 0-2 .896-2 2v16c0 1.104 1 2 2 2 3.255 0 6 2 8 2 3 0 4-1.896 4-3V11Z"></path>
+                            <path fill="#30363d" d="M35 11a2 2 0 0 0-2-2H21a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V11Z"></path>
+                            <path fill="#656d76" d="M19 11c.999 1.998 3.657 2 4 2 2 0 5-2 8-2 1 0 2 .896 2 2v16c0 1.104-1 2-2 2-3.256 0-6 2-8 2-3 0-4-1.896-4-3V11Z"></path>
+                        </g>
+                    </svg>
+                </div>
+
+                <!-- Presentation Text -->
+                <div class="md:w-2/3 p-6 md:p-8">
+                    <h2 class="text-2xl font-bold text-gh-text mb-6 flex items-center">
+                        <span class="w-10 h-1 bg-gh-accent-blue mr-3 rounded-full"></span>
+                        PRÉSENTATION DU CENTRE
+                    </h2>
+                    
+                    <div class="space-y-4 text-gh-text-secondary leading-relaxed">
+                        <p>
+                            Pionnier de l'enseignement à distance à Madagascar, le 
+                            <strong class="text-gh-accent-blue">Centre National de Télé-Enseignement de Madagascar</strong> 
+                            est créé en 1992 sous la tutelle technique du 
+                            <strong class="text-gh-text">Ministère de l'Enseignement Supérieur et de la Recherche Scientifique</strong>.
+                        </p>
+                        
+                        <p>
+                            Conçue initialement pour accueillir les promotions de nouveaux bacheliers suite à la crise socio-politique des années 1990, cette formation à distance est aussi accessible à tous ceux qui - nationaux ou étrangers - veulent librement approfondir leurs savoirs académiques ou professionnels sans avoir à subir les contraintes de la formation présentielle.
+                        </p>
+                        
+                        <p>
+                            D'envergure nationale, le <strong class="text-gh-accent-blue">Centre National de Télé-Enseignement de Madagascar (CNTEMAD)</strong> est composé, outre le Centre Régional d'Antananarivo, de <em class="text-gh-accent-green">34 Centres Régionaux et de 14 Antennes</em> implantés dans les Chefs-lieux d'ex-préfectures et au niveau des districts.
+                        </p>
+                        
+                        <p>
+                            Il offre, par ailleurs, aux travailleurs l'opportunité de réactualiser les acquis professionnels et d'enrichir les connaissances intellectuelles afin de s'assurer une belle carrière. Et ceux qui ne peuvent pas assister aux cours en salle pour diverses raisons ont la possibilité de continuer leurs études supérieures via les formations offertes par le <strong class="text-gh-accent-blue">CNTEMAD</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="mt-16">
+            <h2 class="text-2xl font-bold text-center text-gh-text mb-12">Nos Avantages</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-gh-bg-secondary rounded-xl border border-gh-border hover:border-gh-accent-blue transition-all duration-300 overflow-hidden group">
+                    <div class="h-1 bg-gh-accent-blue"></div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 rounded-full bg-gh-bg-tertiary border border-gh-border flex items-center justify-center mb-4 group-hover:border-gh-accent-blue transition-colors duration-300">
+                            <svg class="w-6 h-6 text-gh-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gh-text mb-2">Formation Flexible</h3>
+                        <p class="text-gh-text-secondary">
+                            Étudiez à votre rythme, où que vous soyez, sans les contraintes de la formation présentielle.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-gh-bg-secondary rounded-xl border border-gh-border hover:border-gh-accent-green transition-all duration-300 overflow-hidden group">
+                    <div class="h-1 bg-gh-accent-green"></div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 rounded-full bg-gh-bg-tertiary border border-gh-border flex items-center justify-center mb-4 group-hover:border-gh-accent-green transition-colors duration-300">
+                            <svg class="w-6 h-6 text-gh-accent-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gh-text mb-2">Proximité</h3>
+                        <p class="text-gh-text-secondary">
+                            34 Centres Régionaux et 14 Antennes à travers Madagascar pour rester proche de chez vous.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-gh-bg-secondary rounded-xl border border-gh-border hover:border-gh-accent-yellow transition-all duration-300 overflow-hidden group">
+                    <div class="h-1 bg-gh-accent-yellow"></div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 rounded-full bg-gh-bg-tertiary border border-gh-border flex items-center justify-center mb-4 group-hover:border-gh-accent-yellow transition-colors duration-300">
+                            <svg class="w-6 h-6 text-gh-accent-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gh-text mb-2">Reconnaissance</h3>
+                        <p class="text-gh-text-secondary">
+                            Diplômes reconnus par l'État sous la tutelle du Ministère de l'Enseignement Supérieur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Teaching Methodology Section -->
+        <div class="mt-16">
+            <h2 class="text-3xl font-bold text-center text-gh-text mb-12">L'Enseignement à Distance au CNTEMAD</h2>
+            
+            <!-- Comparison Section -->
+            <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                <!-- Présentiel -->
+                <div class="bg-gh-bg-secondary rounded-xl border border-gh-border p-6 md:p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full bg-gh-bg-tertiary border border-gh-border flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-gh-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gh-text">Enseignement Présentiel</h3>
+                    </div>
+                    <div class="space-y-4 text-gh-text-secondary">
+                        <p class="leading-relaxed">
+                            En enseignement universitaire présentiel, les étudiants assistent en salle aux cours magistraux dispensés par les enseignants. Le transfert du savoir se concrétise par l'utilisation des logistiques et matériels usuels d'une part, et une assistance permanente du professeur d'autre part.
+                        </p>
+                        <p class="leading-relaxed">
+                            Les étudiants attendent et reçoivent directement de façon progressive les cours donnés par les professeurs en prenant des notes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- À Distance -->
+                <div class="bg-gradient-to-br from-gh-bg-secondary to-gh-bg-tertiary rounded-xl border-2 border-gh-accent-blue p-6 md:p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full bg-gh-accent-blue flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-gh-bg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gh-accent-blue">Enseignement à Distance CNTEMAD</h3>
+                    </div>
+                    <div class="space-y-4 text-gh-text">
+                        <p class="leading-relaxed font-medium">
+                            En enseignement supérieur à distance, <strong>l'apprenant est l'artisan de sa formation</strong>. Les supports didactiques préconçus par les concepteurs constituant les sources du transfert du savoir sont mis à sa disposition.
+                        </p>
+                        <p class="leading-relaxed text-gh-text-secondary">
+                            Ce mode d'enseignement ne requiert ni la présence de l'enseignant, ni la présence permanente en salle, il présente un dispositif simple de formation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advantages Section -->
+            <div class="bg-gh-bg-secondary rounded-xl border border-gh-border p-6 md:p-8 mb-12">
+                <h3 class="text-2xl font-bold text-gh-text mb-6 text-center">Les Avantages de Notre Méthode</h3>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gh-bg-tertiary border border-gh-border rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-gh-accent-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-gh-text mb-2">Flexibilité Horaire</h4>
+                        <p class="text-gh-text-secondary text-sm">
+                            L'apprenant peut adopter des horaires d'études flexibles à sa convenance, tout en tenant compte des échéances fixées (examens).
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gh-bg-tertiary border border-gh-border rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-gh-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-gh-text mb-2">Conciliation Vie Pro/Perso</h4>
+                        <p class="text-gh-text-secondary text-sm">
+                            Le travailleur peut notamment concilier la vie professionnelle, estudiantine et familiale sans de lourdes contraintes.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gh-bg-tertiary border border-gh-border rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-gh-accent-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-gh-text mb-2">Autonomie d'Apprentissage</h4>
+                        <p class="text-gh-text-secondary text-sm">
+                            Formation autonome avec supports didactiques préconçus, développant l'autodiscipline et la responsabilité.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Requirements -->
+            <div class="bg-gradient-to-r from-gh-bg-secondary to-gh-bg-tertiary rounded-xl border border-gh-accent-orange p-6 md:p-8 mb-12">
+                <h3 class="text-2xl font-bold text-gh-accent-orange mb-6 text-center">Qualités Requises pour Réussir</h3>
+                
+                <div class="prose max-w-none text-gh-text-secondary">
+                    <p class="text-lg leading-relaxed mb-6 text-gh-text">
+                        <strong>Une bonne organisation des études de façon autonome est donc la première qualité requise</strong>, 
+                        et l'apprenant doit se soumettre à cet engagement qu'exige l'enseignement à distance pour garantir 
+                        le succès caractérisé par un bon cursus universitaire.
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-gh-bg-secondary rounded-lg p-4 border border-gh-border">
+                            <h4 class="font-bold text-gh-text mb-3">Compétences à développer :</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-gh-accent-orange rounded-full mr-3"></span>
+                                    Élaborer un bon système d'apprentissage
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-gh-accent-orange rounded-full mr-3"></span>
+                                    Définir sa démarche d'études
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-gh-accent-orange rounded-full mr-3"></span>
+                                    Organiser ses activités d'apprentissage
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-gh-accent-orange rounded-full mr-3"></span>
+                                    Mener des recherches personnelles
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-gh-accent-orange rounded-full mr-3"></span>
+                                    Gérer efficacement son temps
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gh-bg-secondary rounded-lg p-4 border border-gh-border">
+                            <h4 class="font-bold text-gh-text mb-3">Motivation essentielle :</h4>
+                            <p class="text-sm leading-relaxed">
+                                Pour réussir, il faut être <strong class="text-gh-accent-orange">extrêmement motivé</strong>. 
+                                L'enseignement à distance demande une discipline personnelle rigoureuse 
+                                et une détermination constante pour atteindre ses objectifs académiques.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impact Section -->
+            <div class="bg-gradient-to-r from-gh-accent-green to-university-blue rounded-xl text-gh-bg p-6 md:p-8">
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold mb-4">Impact sur le Développement National</h3>
+                    <p class="text-lg leading-relaxed max-w-4xl mx-auto mb-8 opacity-90">
+                        L'enseignement à distance, à son aboutissement, confirme de nos jours sa présence dans le système 
+                        d'enseignement universitaire et tend vers un apport considérable, voire incontournable pour le 
+                        <strong>développement de la nation</strong>.
+                    </p>
+                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-white bg-opacity-10 rounded-lg p-4 border border-white border-opacity-20">
+                            <div class="text-2xl font-bold mb-2">30+</div>
+                            <div class="text-sm opacity-90">Années d'innovation pédagogique</div>
+                        </div>
+                        <div class="bg-white bg-opacity-10 rounded-lg p-4 border border-white border-opacity-20">
+                            <div class="text-2xl font-bold mb-2">48</div>
+                            <div class="text-sm opacity-90">Centres à travers Madagascar</div>
+                        </div>
+                        <div class="bg-white bg-opacity-10 rounded-lg p-4 border border-white border-opacity-20">
+                            <div class="text-2xl font-bold mb-2">7</div>
+                            <div class="text-sm opacity-90">Filières d'excellence</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Director's Message -->
+        <div class="mt-16 relative">
+            <button id="toggle-message" class="absolute -top-6 right-4 w-12 h-12 bg-gh-accent-blue hover:bg-gh-accent-purple text-gh-bg rounded-full flex items-center justify-center border border-gh-border transition-colors duration-200 z-10">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+            </button>
+            
+            <div id="director-message" class="hidden bg-gh-bg-secondary rounded-xl border border-gh-border p-6 md:p-8 border-l-4 border-l-gh-accent-blue">
+                <h2 class="text-2xl font-bold text-gh-text mb-6 flex items-center">
+                    <span class="w-10 h-1 bg-gh-accent-blue mr-3 rounded-full"></span>
+                    MOT DU DIRECTEUR NATIONAL
+                </h2>
+                
+                <blockquote class="text-gh-text-secondary space-y-4 italic border-l-4 border-gh-border pl-4">
+                    <p>
+                        Etant le pionnier de l'enseignement à distance à Madagascar, le CNTEMAD entend aujourd'hui faire profiter à ses apprenants, d'une manière optimale, de ses 29 ans d'expériences dans ce domaine. L'éventail de formations qu'il propose a été établi de façon à répondre au mieux à l'évolution des exigences de l'enseignement et du monde professionnel.
+                    </p>
+                    <p>
+                        Toutefois, pour garantir sa réussite et comme en est la spécialité du télé-enseignement, l'apprenant doit se joindre à ces expériences acquises du CNTEMAD, sa détermination et son autodiscipline.
+                    </p>
+                    <p>
+                        Dès lors, cher apprenant, je souhaite que nos expériences, reflétées à travers nos instruments pédagogiques vous servent de guide, suscitent en vous cette détermination et cette autodiscipline qui sont des conditions décisives de votre réussite.
+                    </p>
+                    <p>
+                        Que cette année universitaire, un bateau dans lequel nous nous embarquons ensemble, soit une réussite pour vous, afin de l'être aussi pour le CNTEMAD!
+                    </p>
+                </blockquote>
+                
+                <div class="mt-6 text-right">
+                    <cite class="not-italic">
+                        <div class="font-bold text-gh-text">Josa Augustina JAONARY</div>
+                        <div class="text-gh-text-secondary">Docteur en Sciences Économiques</div>
+                        <div class="text-gh-text-secondary">Maître de Conférences</div>
+                    </cite>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="mt-16 bg-gradient-to-r from-university-blue to-gh-accent-purple rounded-xl border border-gh-border overflow-hidden">
+            <div class="md:flex items-center">
+                <div class="md:w-2/3 p-8 md:p-12">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gh-text mb-4">Prêt à commencer votre parcours académique ?</h2>
+                    <p class="text-gh-text-secondary mb-6">
+                        Découvrez nos filières et inscrivez-vous dès aujourd'hui pour bénéficier d'une formation de qualité adaptée à vos besoins.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="html/filieres.html" class="bg-gh-text text-gh-bg hover:bg-gh-text-secondary px-6 py-3 rounded-lg font-medium border border-gh-border transition-colors duration-200">
+                            Découvrir nos filières
+                        </a>
+                        <a href="html/inscription.html" class="bg-transparent text-gh-text hover:bg-gh-bg-tertiary border border-gh-border px-6 py-3 rounded-lg font-medium transition-colors duration-200">
+                            S'inscrire maintenant
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:block md:w-1/3 p-8">
+                    <svg class="w-full h-auto text-gh-text opacity-20" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 100-12 6 6 0 000 12zm-1-5a1 1 0 011-1h2a1 1 0 110 2h-2a1 1 0 01-1-1zm1-3a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gh-bg-secondary border-t border-gh-border mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Address -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-gh-text">Adresse</h3>
+                    <div class="space-y-2 text-gh-text-secondary">
+                        <p>MADAGASCAR</p>
+                        <p>Antananarivo - 101</p>
+                        <p>Lot IVC 6 - Ambomitsangana</p>
+                        <p>B.P.78</p>
+                    </div>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-gh-text">Contact</h3>
+                    <div class="space-y-2">
+                        <a href="tel:+261 20 22 600 57" class="text-gh-text-secondary hover:text-gh-accent-blue transition-colors duration-200 block">
+                            Tél : +261 20 22 600 57
+                        </a>
+                        <a href="mailto:cntemad@cntemad.com" class="text-gh-text-secondary hover:text-gh-accent-blue transition-colors duration-200 block">
+                            Email : cntemad@cntemad.com
+                        </a>
+                        <a href="#" class="text-gh-text-secondary hover:text-gh-accent-blue transition-colors duration-200 block">
+                            Facebook : CNTEMAD Officiel
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gh-border mt-8 pt-8 text-center">
+                <p class="text-gh-text-muted">&copy; 2024 CNTEMAD. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            
+            // Toggle icon
+            const icon = mobileMenuButton.querySelector('svg');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+            } else {
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />';
+            }
+        });
+
+        // Director's message toggle
+        const toggleMessageButton = document.getElementById('toggle-message');
+        const directorMessage = document.getElementById('director-message');
+
+        toggleMessageButton.addEventListener('click', () => {
+            directorMessage.classList.toggle('hidden');
+            
+            // Change icon based on state
+            const icon = toggleMessageButton.querySelector('svg');
+            if (directorMessage.classList.contains('hidden')) {
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>';
+            } else {
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+            }
+        });
+    </script>
+</body>
 </html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#58a6ff',
+                        secondary: '#1f6feb',
+                        accent: '#56d364',
+                        warning: '#ffa657',
+                        purple: '#a5a3ff',
+                        'gh-bg': '#0d1117',
+                        'gh-bg-secondary': '#161b22',
+                        'gh-bg-tertiary': '#21262d',
+                        'gh-border': '#30363d',
+                        'gh-text': '#f0f6fc',
+                        'gh-text-secondary': '#8b949e',
+                        'gh-text-muted': '#656d76',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>CNTEMAD - Modalités</title>
+</head>
+<body class="bg-gh-bg min-h-screen text-gh-text">
+    <!-- Header -->
+    <header class="bg-gh-bg-secondary shadow-xl border-b border-gh-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-primary">CNTEMAD</h1>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Accueil</a>
+                    <a href="filieres.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Filières</a>
+                    <a href="cursus.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Cursus</a>
+                    <a href="modalites.html" class="text-primary px-3 py-2 rounded-md text-sm font-medium bg-gh-bg-tertiary border border-gh-border">Modalités</a>
+                    <a href="atomes.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Livres</a>
+                    <a href="inscription.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Inscription</a>
+                    <a href="paiement.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Paiement</a>
+                </nav>
+
+                <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gh-text-secondary hover:text-primary hover:bg-gh-bg-tertiary transition-colors duration-200">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden hidden bg-gh-bg-secondary border-t border-gh-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Accueil</a>
+                <a href="filieres.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Filières</a>
+                <a href="cursus.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Cursus</a>
+                <a href="modalites.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium bg-gh-bg-tertiary border border-gh-border">Modalités</a>
+                <a href="atomes.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Livres</a>
+                <a href="inscription.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Inscription</a>
+                <a href="paiement.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Paiement</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Page Title -->
+        <div class="text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-gh-text mb-4">MODALITÉS D'ÉTUDES AU CNTEMAD</h1>
+            <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+        </div>
+
+        <!-- MODALITÉS D'EXAMEN ET D'ADMISSION Section -->
+        <div class="bg-gh-bg-secondary rounded-xl shadow-xl border border-gh-border p-6 md:p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gh-text mb-6 text-center">MODALITÉS D'EXAMEN ET D'ADMISSION</h2>
+            
+            <div class="space-y-6">
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-primary mb-4">Le déroulement des examens</h3>
+                    <div class="space-y-4 text-gh-text-secondary">
+                        <div class="flex items-start">
+                            <span class="w-6 h-6 bg-gh-bg-secondary border border-gh-border rounded-full flex items-center justify-center text-xs font-bold mr-3 flex-shrink-0">1</span>
+                            <p>Le premier examen au titre de la session normale (examen des semestres pair/impaire) se tient durant cinq (05) jours selon le calendrier fixé par le CNTEMAD;</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="w-6 h-6 bg-gh-bg-secondary border border-gh-border rounded-full flex items-center justify-center text-xs font-bold mr-3 flex-shrink-0">2</span>
+                            <p>L'examen de la session de rattrapage se déroule pendant cinq (05) jours;</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="w-6 h-6 bg-gh-bg-secondary border border-gh-border rounded-full flex items-center justify-center text-xs font-bold mr-3 flex-shrink-0">3</span>
+                            <p>Une session spéciale dédiée au passage à l'essai de validation des UE à rattraper est aussi prévue pour les apprenants inscrits à un niveau supérieur et qui ont encore des UE à rattraper. Le calendrier de cette session spéciale ne risque pas de se chevaucher avec les calendriers des deux autres sessions précitées.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-accent mb-4">A l'issue de l'examen final</h3>
+                    <p class="text-gh-text-secondary mb-4">Il y a deux cas possibles :</p>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-gh-bg-secondary border border-accent rounded-lg p-4">
+                            <div class="flex items-start">
+                                <span class="w-6 h-6 bg-accent text-gh-bg rounded-full flex items-center justify-center text-xs font-bold mr-3 flex-shrink-0">1</span>
+                                <p class="text-accent">Si l'apprenant acquiert tous les crédits, tous les UE sont validées, il est dit <span class="font-bold">"admis définitivement au niveau supérieur"</span>;</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gh-bg-secondary border border-warning rounded-lg p-4">
+                            <div class="flex items-start">
+                                <span class="w-6 h-6 bg-warning text-gh-bg rounded-full flex items-center justify-center text-xs font-bold mr-3 flex-shrink-0">2</span>
+                                <div class="text-warning">
+                                    <p class="mb-2">Si l'apprenant n'obtient pas 100% de crédit, le <span class="font-bold">"rattrapage est obligatoire"</span>. Dans ce cas, l'apprenant a le choix de refaire un ou plusieurs EC composant de chaque unité d'enseignement non validée.</p>
+                                    <ul class="space-y-2 pl-6">
+                                        <li class="flex items-start">
+                                            <span class="w-2 h-2 bg-warning rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                                            <span>Pour les apprenants en L3 (au cas où toutes les UE sont validées) : <span class="font-bold">"A obtenu le diplôme Licence"</span></span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <span class="w-2 h-2 bg-warning rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                                            <span>Pour les apprenants en M2 (en cas de validation de toutes les UE) : <span class="font-bold">"Admis aux travaux de recherche"</span></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-primary mb-4">Après la session de rattrapage</h3>
+                    <p class="text-gh-text-secondary mb-4">Il y a trois cas possibles :</p>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-gh-bg-secondary border border-accent rounded-lg p-4">
+                            <div class="flex items-start">
+                                <span class="w-6 h-6 bg-accent text-gh-bg rounded-full flex items-center justify-center text-xs font-bold mr-3 flex-shrink-0">1</span>
+                                <p class="text-accent">Si l'apprenant obtient tous les crédits, il est dit <span class="font-bold">"admis définitivement au niveau supérieur"</span>, c'est à dire toutes les UE sont validées en l'occurrence tous les 60 crédits sont acquis;</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gh-bg-secondary border border-warning rounded-lg p-4">
+                            <div class="flex items-start">
+                                <span class="w-6 h-6 bg-warning text-gh-bg rounded-full flex items-center justify-center text-xs font-bold mr-3 flex-shrink-0">2</span>
+                                <p class="text-warning">Si l'apprenant obtient 75% de crédit, pour seulement les niveaux L1 - L2 - M1, il est <span class="font-bold">"admis au niveau supérieur avec UE à rattraper"</span>. L'apprenant aura acquis un total de crédits supérieur ou égal à 45 sur les deux semestres;</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gh-bg-secondary border border-red-400 rounded-lg p-4">
+                            <div class="flex items-start">
+                                <span class="w-6 h-6 bg-red-400 text-gh-bg rounded-full flex items-center justify-center text-xs font-bold mr-3 flex-shrink-0">3</span>
+                                <p class="text-red-400">Si l'apprenant n'obtient pas les 75% de crédit, il sera autorisé à redoubler, donc <span class="font-bold">"ajourné"</span>. Le total de crédit des UE validées représente moins de 45 crédits.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-gh-bg border border-primary rounded-lg">
+                        <p class="text-primary font-bold">Une fois prononcé, le résultat est définitif et sans appel.</p>
+                        <p class="text-gh-text-secondary mt-2">Tout apprenant redoublant doit repasser les EC non acquis dans les UE non validées.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-primary mb-4">Remarques :</h3>
+                    <div class="space-y-3 text-gh-text-secondary">
+                        <div class="flex items-start">
+                            <span class="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                            <p>Un semestre représente 30 crédits. Une année universitaire est composée de deux semestres, soit un total de 60 crédits;</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                            <p>Pour les UE non validées, les crédits y afférent ne sont pas considérés au calcul; même si ces UE non validées font figurer quelques EC ayant obtenus une note supérieur à 10/20.</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                            <p>Les épreuves se déroulent dans chaque Centre Régional du CNTEMAD.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODALITÉS DES STAGES ET DE SOUTENANCE Section -->
+        <div class="bg-gh-bg-secondary rounded-xl shadow-xl border border-gh-border p-6 md:p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gh-text mb-6 text-center">MODALITÉS DES STAGES ET DE SOUTENANCE</h2>
+            
+            <div class="space-y-6">
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-accent mb-4">Licence 3</h3>
+                    <div class="space-y-4 text-gh-text-secondary">
+                        <p>Au CNTEMAD, tout apprenant de la Licence 3 doit élaborer un ouvrage (rapport de stage ou de recherche thématique selon la Mention où il s'est inscrit)² qui sera noté suivant une grille de notation. Ainsi, le dépôt de cet ouvrage demeure la condition sinoque non de l'obtention de diplôme de Licence. Le délai de dépôt est fixé à un (01) mois au plus tard, avant l'examen final. Une attestation de stage (fourni par l'encadreur professionnel) est requise pour les apprenants des Mentions dont le stage en entreprise est obligatoire.</p>
+                        <p>Un guide de rédaction de rapport de stage ou des ouvrages afférents à l'initiation à la recherche ou à la recherche thématique sera mis à la disposition des apprenants de la L3.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-primary mb-4">Master 2</h3>
+                    <div class="space-y-4 text-gh-text-secondary">
+                        <p>Quant aux apprenants en Master 2, après avoir subi avec succès les examens théoriques, ils devront élabore un mémoire d'environ 80 pages sur un thème de leur choix. Pour ce faire, ils ont le choix d'effectuer un stage en entreprise ou de procéder à l'attestation de soutenabilité de son mémoire de la part de son encadreur pédagogique, attestation visée par la suite par le Chef de mention, il sera en mesure de présenter ses travaux de recherche devant un jury, selon le calendrier de soutenance imposé par l'administration. Et la soutenance pourrait être organisée en provinces selon l'importance ou la concentration en provinces du nombre de candidats prêt à soutenir.</p>
+                        <p>Le jury de soutenance composé de rang magistral est nommé par le Directeur National sur proposition des Responsables de Mention. Il est composé d'un Président, d'un Rapporteur, qui est l'Encadreur professionnel est facultative tandis que celle de l'encadreur pédagogique est obligatoire.</p>
+                        <p>Désormais, les apprenants M2 ayant terminé les épreuves théoriques ne se verront être sanctionnés de Diplôme de Master qu'après la soutenance publique de leur mémoire devant le jury.</p>
+                        <p>Un guide méthodologique de rédaction de mémoire sera mis à la disposition des apprenants M2.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-warning mb-4">Spécificités par filière</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gh-bg-secondary border border-warning rounded-lg p-4">
+                            <h4 class="font-bold text-warning mb-2">Filières avec recherche thématique (stage facultatif)</h4>
+                            <p class="text-gh-text-secondary">Il est fortement recommandé à l'endroit des apprenants L3 de la Mention <span class="font-bold text-warning">ÉCONOMIE</span> de procéder à l'initiation à la recherche; pour les apprenants L3 en Mention <span class="font-bold text-warning">Droit</span> d'entreprendre une recherche thématique pour pouvoir accéder à son diplôme Licence. Autrement dit, le stage au niveau d'une entreprise ou d'un cabinet ou d'un établissement quelconque peut être procédé autant que faire se peut, mais reste facultatif.</p>
+                        </div>
+                        
+                        <div class="bg-gh-bg-secondary border border-accent rounded-lg p-4">
+                            <h4 class="font-bold text-accent mb-2">Filières avec stage obligatoire</h4>
+                            <p class="text-gh-text-secondary">Pour les Mentions <span class="font-bold text-accent">Gestion, Commerce, Information et Communication, Informatique, Télécommunication et Génie Industriel</span>, il est obligatoire pour les apprenants en L3 de faire un stage d'un mois minimum au niveau d'une organisation ou d'une entreprise de son choix pour qu'ils puissent établir un rapport de stage garant de la sanction d'un diplôme de Licence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ressources Section -->
+        <div class="bg-gradient-to-r from-gh-bg-tertiary to-gh-bg-secondary rounded-xl shadow-xl border border-gh-border p-6 md:p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gh-text mb-6 text-center">RESSOURCES UTILES</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gh-bg-secondary rounded-lg border border-gh-border p-4 hover:border-primary transition-colors duration-200">
+                    <div class="flex items-center mb-3">
+                        <svg class="w-6 h-6 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                        <h3 class="font-bold text-gh-text">Guide de rédaction de rapport de stage</h3>
+                    </div>
+                    <p class="text-gh-text-secondary text-sm">Téléchargez le guide complet pour la rédaction de votre rapport de stage en L3.</p>
+                    <a href="#" class="inline-flex items-center mt-3 text-primary hover:underline">
+                        Télécharger
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="bg-gh-bg-secondary rounded-lg border border-gh-border p-4 hover:border-accent transition-colors duration-200">
+                    <div class="flex items-center mb-3">
+                        <svg class="w-6 h-6 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                        <h3 class="font-bold text-gh-text">Guide méthodologique de rédaction de mémoire</h3>
+                    </div>
+                    <p class="text-gh-text-secondary text-sm">Consultez le guide pour la rédaction de votre mémoire de Master 2.</p>
+                    <a href="#" class="inline-flex items-center mt-3 text-accent hover:underline">
+                        Télécharger
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="bg-gh-bg-secondary rounded-xl shadow-xl border border-gh-border p-6 md:p-8">
+            <h2 class="text-2xl font-bold text-gh-text mb-6 text-center">QUESTIONS FRÉQUENTES</h2>
+            
+            <div class="space-y-4">
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-4">
+                    <h3 class="font-bold text-primary mb-2">Quand se déroulent les examens ?</h3>
+                    <p class="text-gh-text-secondary">Les examens se déroulent généralement en mai-juin pour la session normale et en août-septembre pour la session de rattrapage. Le calendrier précis est communiqué par le CNTEMAD chaque année.</p>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-4">
+                    <h3 class="font-bold text-primary mb-2">Comment puis-je consulter mes résultats ?</h3>
+                    <p class="text-gh-text-secondary">Les résultats sont affichés dans les Centres Régionaux du CNTEMAD. Vous pouvez également les consulter en ligne sur le site web du CNTEMAD avec votre numéro d'inscription.</p>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-4">
+                    <h3 class="font-bold text-primary mb-2">Puis-je contester mes résultats ?</h3>
+                    <p class="text-gh-text-secondary">Non, une fois prononcés, les résultats sont définitifs et sans appel. Il est donc important de bien se préparer pour les examens.</p>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-4">
+                    <h3 class="font-bold text-primary mb-2">Comment trouver un lieu de stage ?</h3>
+                    <p class="text-gh-text-secondary">Le CNTEMAD ne fournit pas directement des lieux de stage, mais vous pouvez consulter le service d'orientation qui pourra vous donner des conseils et éventuellement des contacts d'entreprises partenaires.</p>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-4">
+                    <h3 class="font-bold text-primary mb-2">Quand dois-je déposer mon rapport de stage ou mémoire ?</h3>
+                    <p class="text-gh-text-secondary">Pour les L3, le délai de dépôt est fixé à un (01) mois au plus tard avant l'examen final. Pour les M2, les délais sont communiqués par l'administration selon le calendrier de soutenance.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gh-bg-secondary text-gh-text border-t border-gh-border mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-gh-text">Adresse</h3>
+                    <div class="space-y-2 text-gh-text-secondary">
+                        <p>MADAGASCAR</p>
+                        <p>Antananarivo - 101</p>
+                        <p>Lot IVC 6 - Ambomitsangana</p>
+                        <p>B.P.78</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-gh-text">Contact</h3>
+                    <div class="space-y-2">
+                        <a href="tel:+261 20 22 600 57" class="text-gh-text-secondary hover:text-primary transition-colors duration-200 block">Tél : +261 20 22 600 57</a>
+                        <a href="mailto:cntemad@cntemad.com" class="text-gh-text-secondary hover:text-primary transition-colors duration-200 block">Email : cntemad@cntemad.com</a>
+                        <a href="#" class="text-gh-text-secondary hover:text-primary transition-colors duration-200 block">Facebook : CNTEMAD Officiel</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gh-border mt-8 pt-8 text-center">
+                <p class="text-gh-text-muted">&copy; 2024 CNTEMAD. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,387 +1,431 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../css/style.css" />
-        <title>Guide CNTEMAD 2</title>
-    </head>
-    <body>
-        <header>
-            <nav id="header-nav" class="hidden">
-                <ul>
-                    <li>
-                        <a href="../index.html" class="group">
-                            Accueil
-                            <span
-                                class="scale-x-0 group-hover:scale-x-100"
-                            ></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="filieres.html" class="group">
-                            Filières
-                            <span
-                                class="scale-x-0 group-hover:scale-x-100"
-                            ></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="cursus.html" class="group">
-                            Cursus
-                            <span
-                                class="scale-x-0 group-hover:scale-x-100"
-                            ></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="atomes.html" class="group">
-                            Livres
-                            <span
-                                class="scale-x-0 group-hover:scale-x-100"
-                            ></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="inscription.html" class="group">
-                            Inscription
-                            <span
-                                class="scale-x-0 group-hover:scale-x-100"
-                            ></span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <button
-                id="header-arrow-button"
-                class="md:hidden block"
-                onclick="toggle_header()"
-            >
-                🔽
-            </button>
-        </header>
-        <main>
-            <h1 class="title0">INSCRIPTION ADMINISTRATIVE ET PÉDAGOGIQUE</h1>
-            <div class="md:p-10">
-                <p>
-                    L'inscription administrative indique que l'apprenant aurait
-                    déposer son dossier complet auprès du centre régional (CRTE)
-                    ou Antenne en choisissant la Mention et/ou le Parcours.
-                    Ainsi, le droit d'inscription administrative doit être réglé
-                    et une carte d'apprenant sera délivrée ultérieurement.
-                </p>
-                <p>
-                    Suite à l'inscription administrative, l'apprenant doit
-                    effectuer une inscription pédagogique. Cette dernière se
-                    fait au plus tard un (01) mois avant les examens et
-                    l'apprenant doit choisir les EC qu'il va passer aux examens.
-                    Ce délai passé, aucune dérogation n'est recevable quel que
-                    soit le motif.
-                </p>
-                <p>
-                    Les inscriptions sont obligatoires, individuelles et
-                    annuelles. Pour s'inscrire, l'apprenant devrait être soit:
-                </p>
-                <ul class="list-disc list-inside font-bold">
-                    <li>Titulaire de diplôme de baccalauréat</li>
-                    <li>Admis au niveau supérieur</li>
-                    <li>Admis avec UE à rattraper</li>
-                    <li>Ajourné (autoriser à redoubler)</li>
-                    <li>Autorisé à s'inscrire par voie de transfert</li>
-                </ul>
-                <h1 class="title1">DROITS ET FRAIS ANNUELS (en Ariary)</h1>
-                <table class="table-dark mx-auto">
-                    <caption>
-                        DROITS ET FRAIS ANNUELS (en Ariary)
-                    </caption>
-                    <tr>
-                        <td></td>
-                        <td colspan="2">PASSANTS</td>
-                        <td colspan="2">REDOUBLANTS</td>
-                        <td colspan="2">ADMIS AVEC UE A RATTRAPER</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Nationaux</td>
-                        <td>Étrangers</td>
-                        <td>Nationaux</td>
-                        <td>Étrangers</td>
-                        <td>Nationaux</td>
-                        <td>Étrangers</td>
-                    </tr>
-                    <tr>
-                        <td>Droit d'inscription administrative</td>
-                        <td>45 000</td>
-                        <td>90 000</td>
-                        <td>45 000</td>
-                        <td>90 000</td>
-                        <td>45 000</td>
-                        <td>90 000</td>
-                    </tr>
-                    <tr>
-                        <td>Droit d'inscription à l'examen</td>
-                        <td>25 000</td>
-                        <td>50 000</td>
-                        <td>25 000</td>
-                        <td>50 000</td>
-                        <td>25 000</td>
-                        <td>50 000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Droit d'inscription administrative pour le niveau de
-                            rattrapage*
-                        </td>
-                        <td colspan="2"></td>
-                        <td colspan="2"></td>
-                        <td>20 000</td>
-                        <td>40 000</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Droit d'inscription à l'examen pur le niveau de
-                            rattrapage
-                        </td>
-                        <td colspan="2"></td>
-                        <td colspan="2"></td>
-                        <td>25 000</td>
-                        <td>50 000</td>
-                    </tr>
-                    <tr>
-                        <td colspan="7">DROIT PAR ELEMENT CONSTITUTIF</td>
-                    </tr>
-                    <tr>
-                        <td>Première année de Licence-L1</td>
-                        <td>30 000</td>
-                        <td>60 000</td>
-                        <td colspan="2"></td>
-                        <td>30 000</td>
-                        <td>60 000</td>
-                    </tr>
-                    <tr>
-                        <td>Deuxième année en Licence-L2</td>
-                        <td>35 000</td>
-                        <td>65 000</td>
-                        <td colspan="2"></td>
-                        <td>35 000</td>
-                        <td>65 000</td>
-                    </tr>
-                    <tr>
-                        <td>Troisième année en Licence-L3</td>
-                        <td>40 000</td>
-                        <td>70 000</td>
-                        <td colspan="2"></td>
-                        <td>40 000</td>
-                        <td>70 000</td>
-                    </tr>
-                    <tr>
-                        <td>Première année de Master-M1</td>
-                        <td>45 000</td>
-                        <td>75 000</td>
-                        <td colspan="2"></td>
-                        <td>45 000</td>
-                        <td>75 000</td>
-                    </tr>
-                    <tr>
-                        <td>Deuxième année en Master-M2</td>
-                        <td>50 000</td>
-                        <td>80 000</td>
-                        <td colspan="2"></td>
-                        <td>50 000</td>
-                        <td>80 000</td>
-                    </tr>
-                    <tr>
-                        <td colspan="7">DROIT DE REDOUBLEMENT ANNUEL</td>
-                    </tr>
-                    <tr>
-                        <td>Première année de Licence-L1</td>
-                        <td colspan="2"></td>
-                        <td>100 000</td>
-                        <td>200 000</td>
-                        <td colspan="2"></td>
-                    </tr>
-                    <tr>
-                        <td>Deuxième année en Licence-L2</td>
-                        <td colspan="2"></td>
-                        <td>120 000</td>
-                        <td>220 000</td>
-                        <td colspan="2"></td>
-                    </tr>
-                    <tr>
-                        <td>Troisième année en Licence-L3</td>
-                        <td colspan="2"></td>
-                        <td>135 000</td>
-                        <td>235 000</td>
-                        <td colspan="2"></td>
-                    </tr>
-                    <tr>
-                        <td>Première année de Master-M1</td>
-                        <td colspan="2"></td>
-                        <td>150 000</td>
-                        <td>250 000</td>
-                        <td colspan="2"></td>
-                    </tr>
-                    <tr>
-                        <td>Deuxième année en Master-M2</td>
-                        <td colspan="2"></td>
-                        <td>170 000</td>
-                        <td>270 000</td>
-                        <td colspan="2"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="7">
-                            FRAIS DE RATTRAPAGE DES UNITES D'ENSEIGNEMENT
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Première année de Licence-L1</td>
-                        <td colspan="2"></td>
-                        <td colspan="2"></td>
-                        <td>25 000</td>
-                        <td>50 000</td>
-                    </tr>
-                    <tr>
-                        <td>Deuxième année en Licence-L2</td>
-                        <td colspan="2"></td>
-                        <td colspan="2"></td>
-                        <td>30 000</td>
-                        <td>55 000</td>
-                    </tr>
-                    <tr>
-                        <td>Première année de Master-M1</td>
-                        <td colspan="2"></td>
-                        <td colspan="2"></td>
-                        <td>40 000</td>
-                        <td>65 000</td>
-                    </tr>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#58a6ff',
+                        secondary: '#1f6feb',
+                        accent: '#56d364',
+                        warning: '#ffa657',
+                        purple: '#a5a3ff',
+                        'gh-bg': '#0d1117',
+                        'gh-bg-secondary': '#161b22',
+                        'gh-bg-tertiary': '#21262d',
+                        'gh-border': '#30363d',
+                        'gh-text': '#f0f6fc',
+                        'gh-text-secondary': '#8b949e',
+                        'gh-text-muted': '#656d76',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>CNTEMAD - Inscription</title>
+</head>
+<body class="bg-gh-bg min-h-screen text-gh-text">
+    <!-- Header -->
+    <header class="bg-gh-bg-secondary shadow-xl border-b border-gh-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-primary">CNTEMAD</h1>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Accueil</a>
+                    <a href="filieres.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Filières</a>
+                    <a href="cursus.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Cursus</a>
+                    <a href="modalites.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Modalités</a>
+                    <a href="atomes.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Livres</a>
+                    <a href="inscription.html" class="text-primary px-3 py-2 rounded-md text-sm font-medium bg-gh-bg-tertiary border border-gh-border">Inscription</a>
+                    <a href="paiement.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Paiement</a>
+                </nav>
+
+                <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gh-text-secondary hover:text-primary hover:bg-gh-bg-tertiary transition-colors duration-200">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden hidden bg-gh-bg-secondary border-t border-gh-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Accueil</a>
+                <a href="filieres.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Filières</a>
+                <a href="cursus.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Cursus</a>
+                <a href="modalites.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Modalités</a>
+                <a href="atomes.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Livres</a>
+                <a href="inscription.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium bg-gh-bg-tertiary border border-gh-border">Inscription</a>
+                <a href="paiement.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Paiement</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Page Title -->
+        <div class="text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-gh-text mb-4">INSCRIPTION AU CNTEMAD</h1>
+            <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+        </div>
+
+        <!-- Inscription Administrative et Pédagogique -->
+        <div class="bg-gh-bg-secondary rounded-xl shadow-xl border border-gh-border p-6 md:p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gh-text mb-6 text-center">INSCRIPTION ADMINISTRATIVE ET PÉDAGOGIQUE</h2>
+            
+            <div class="space-y-6 text-gh-text-secondary">
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-primary mb-4">Inscription Administrative</h3>
+                    <p class="leading-relaxed mb-4">
+                        L'inscription administrative indique que l'apprenant aurait déposer son dossier complet auprès du centre régional (CRTE) ou Antenne en choisissant la Mention et/ou le Parcours. Ainsi, le droit d'inscription administrative doit être réglé et une carte d'apprenant sera délivrée ultérieurement.
+                    </p>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-primary mb-4">Inscription Pédagogique</h3>
+                    <p class="leading-relaxed mb-4">
+                        Suite à l'inscription administrative, l'apprenant doit effectuer une inscription pédagogique. Cette dernière se fait au plus tard un (01) mois avant les examens et l'apprenant doit choisir les EC qu'il va passer aux examens. Ce délai passé, aucune dérogation n'est recevable quel que soit le motif.
+                    </p>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-primary mb-4">Conditions d'Inscription</h3>
+                    <p class="leading-relaxed mb-4">
+                        Les inscriptions sont obligatoires, individuelles et annuelles. Pour s'inscrire, l'apprenant devrait être soit:
+                    </p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>Titulaire de diplôme de baccalauréat</li>
+                        <li>Admis au niveau supérieur</li>
+                        <li>Admis avec UE à rattraper</li>
+                        <li>Ajourné (autoriser à redoubler)</li>
+                        <li>Autorisé à s'inscrire par voie de transfert</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Droits et Frais Annuels -->
+        <div class="bg-gh-bg-secondary rounded-xl shadow-xl border border-gh-border p-6 md:p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gh-text mb-6 text-center">DROITS ET FRAIS ANNUELS (en Ariary)</h2>
+            
+            <div class="overflow-x-auto mb-6">
+                <table class="w-full text-sm border-collapse border border-gh-border bg-gh-bg-tertiary rounded-lg overflow-hidden">
+                    <thead>
+                        <tr class="bg-gh-bg">
+                            <th class="border border-gh-border p-2 text-left text-gh-text">DROITS ET FRAIS ANNUELS (en Ariary)</th>
+                            <th class="border border-gh-border p-2 text-center text-gh-text" colspan="2">PASSANTS</th>
+                            <th class="border border-gh-border p-2 text-center text-gh-text" colspan="2">REDOUBLANTS</th>
+                            <th class="border border-gh-border p-2 text-center text-gh-text" colspan="2">ADMIS AVEC UE A RATTRAPER</th>
+                        </tr>
+                        <tr class="bg-gh-bg-secondary">
+                            <th class="border border-gh-border p-2"></th>
+                            <th class="border border-gh-border p-2 text-center text-gh-text-secondary">Nationaux</th>
+                            <th class="border border-gh-border p-2 text-center text-gh-text-secondary">Étrangers</th>
+                            <th class="border border-gh-border p-2 text-center text-gh-text-secondary">Nationaux</th>
+                            <th class="border border-gh-border p-2 text-center text-gh-text-secondary">Étrangers</th>
+                            <th class="border border-gh-border p-2 text-center text-gh-text-secondary">Nationaux</th>
+                            <th class="border border-gh-border p-2 text-center text-gh-text-secondary">Étrangers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gh-bg transition-colors duration-200">
+                            <td class="border border-gh-border p-2 font-medium text-gh-text">Droit d'inscription administrative</td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary">90 000</td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary">90 000</td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary">90 000</td>
+                        </tr>
+                        <tr class="hover:bg-gh-bg transition-colors duration-200">
+                            <td class="border border-gh-border p-2 font-medium text-gh-text">Droit d'inscription à l'examen</td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary">50 000</td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary">50 000</td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary">50 000</td>
+                        </tr>
+                        <tr class="hover:bg-gh-bg transition-colors duration-200">
+                            <td class="border border-gh-border p-2 font-medium text-gh-text">Droit d'inscription administrative pour le niveau de rattrapage*</td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary"></td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary"></td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary"></td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary"></td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary">20 000</td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary">40 000</td>
+                        </tr>
+                        <tr class="hover:bg-gh-bg transition-colors duration-200">
+                            <td class="border border-gh-border p-2 font-medium text-gh-text">Droit d'inscription à l'examen pur le niveau de rattrapage</td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary"></td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary"></td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary"></td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary"></td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                            <td class="border border-gh-border p-2 text-center text-gh-text-secondary">50 000</td>
+                        </tr>
+                    </tbody>
                 </table>
-
-                <h1 class="title1">Remarque</h1>
-                <p>
-                    Pour tous les droits mentionnés dans le tableau, aucun
-                    remboursement ne sera effectué quel que soit le motif. Le
-                    paiement de la totalité des frais d'études (paiement des EC,
-                    unités d'enseignement fondamentales et unités d'enseignement
-                    complémentaires de chacun des deux (02) semestres) et du
-                    droit d'inscription à l'examen, un (01) mois avant les
-                    examens conditionne la participation à l'examen final.
-                </p>
-                <p>
-                    <em
-                        >Tout paiement en espèces aux agents du CRTE est
-                        strictement interdit.
-                        <br />
-                        Il doit être effectué auprès de la banque assignée à
-                        chaque CRTE en précisant le nom de l'apprenant.</em
-                    >
-                </p>
-                <h3>
-                    Des frais supplémentaires sont prévus pour les niveaux L3 et
-                    M2 :
-                </h3>
-                <h4>L3</h4>
-                <p>Frais de rapport des stage : Ar 60 000</p>
-                <h4>M2</h4>
-                <p>Frais d'encadrement : Ar 150 000</p>
-                <p>Frais de soutenance : Ar 200 000</p>
-
-                <h1 class="title1">
-                    EXPLICATIONS DES CAS SUIVANT LA SITUATION DE L'APPRENANT
-                </h1>
-                <p>
-                    Pour tout apprenant de tout niveau confondu et quel que soit
-                    sa situation (Passant, redoublant ou admis avec UE à
-                    rattraper), le droit d'inscription administrative et celui à
-                    l'examen sont respectivement égaux à 45 000 et 25 000 Ar. En
-                    plus de ces droits, l'apprenant doit s'acquitter des droits
-                    ci-après suivant le cas de l'apprenant.
-                </p>
-                <h3 class="title2">Cas de "PASSANTS" :</h3>
-                <p>
-                    Les novices ou passants doivent payer le droit par élément
-                    constitutifs (EC) en considérant le nombre d'EC pout son
-                    niveau correspondant.
-                </p>
-                <h3 class="title2">Cas de "REDOUBLANTS" :</h3>
-                <p>
-                    Le redoublant doit payer le droit de redoublement
-                    correspondant à son niveau. En l'occurrence un apprenant
-                    redoublant en L2 paye le frais de redoublement d'un montant
-                    de Ar 120 000.
-                </p>
-                <h3 class="title2">Cas des "ADMIS AVEC UE A RATTRAPER" :</h3>
-                <p>En tant que passant, l'apprenant doit remplir :</p>
-                <ul>
-                    <li>
-                        les droits d'inscription administrative et des droits
-                        d'examen pour son niveau actuel
-                    </li>
-                    <li>
-                        les droits par éléments constitutifs suivant le niveau
-                        et le nombre d'EC
-                    </li>
-                </ul>
-                <p>
-                    Et en rattrapant les UE non acquises, l'apprenant doit payer
-                    :
-                </p>
-                <ul>
-                    <li>
-                        les droits d'inscription administrative et des droits
-                        d'examen pour le niveau de rattrapage
-                    </li>
-                    <li>
-                        le frais de rattrapage suivant le niveau L1, L2, ou M1
-                    </li>
-                </ul>
-                <p>
-                    A noter que pour les niveaux L3 et M2, un apprenant doit
-                    valider toutes les UE pour obtenir le diplôme de Licence
-                    (L3) ou admis aux travaux de recherche (m2). Ceci sera
-                    expliqué dans la<a href="cursus.html#charte"></a>
-                        charte de contrôle des connaissances.</a
-                    >
-                </p>
             </div>
-        </main>
-        <footer>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-lg font-bold text-primary mb-4">DROIT PAR ELEMENT CONSTITUTIF</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm border-collapse border border-gh-border bg-gh-bg-tertiary rounded-lg overflow-hidden">
+                            <thead>
+                                <tr class="bg-gh-bg">
+                                    <th class="border border-gh-border p-2 text-left text-gh-text">Niveau</th>
+                                    <th class="border border-gh-border p-2 text-center text-gh-text">Nationaux</th>
+                                    <th class="border border-gh-border p-2 text-center text-gh-text">Étrangers</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">Première année de Licence-L1</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">30 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">60 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">Deuxième année en Licence-L2</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">35 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">65 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">Troisième année en Licence-L3</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">40 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">70 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">Première année de Master-M1</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">75 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">Deuxième année en Master-M2</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">50 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">80 000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-primary mb-4">DROIT DE REDOUBLEMENT ANNUEL</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm border-collapse border border-gh-border bg-gh-bg-tertiary rounded-lg overflow-hidden">
+                            <thead>
+                                <tr class="bg-gh-bg">
+                                    <th class="border border-gh-border p-2 text-left text-gh-text">Niveau</th>
+                                    <th class="border border-gh-border p-2 text-center text-gh-text">Nationaux</th>
+                                    <th class="border border-gh-border p-2 text-center text-gh-text">Étrangers</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">Première année de Licence-L1</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">100 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">200 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">Deuxième année en Licence-L2</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">120 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">220 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">Troisième année en Licence-L3</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">135 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">235 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">Première année de Master-M1</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">150 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">250 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">Deuxième année en Master-M2</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">170 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">270 000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-6">
+                <h3 class="text-lg font-bold text-primary mb-4">FRAIS DE RATTRAPAGE DES UNITES D'ENSEIGNEMENT</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm border-collapse border border-gh-border bg-gh-bg-tertiary rounded-lg overflow-hidden">
+                        <thead>
+                            <tr class="bg-gh-bg">
+                                <th class="border border-gh-border p-2 text-left text-gh-text">Niveau</th>
+                                <th class="border border-gh-border p-2 text-center text-gh-text">Nationaux</th>
+                                <th class="border border-gh-border p-2 text-center text-gh-text">Étrangers</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                <td class="border border-gh-border p-2 font-medium text-gh-text">Première année de Licence-L1</td>
+                                <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                <td class="border border-gh-border p-2 text-center text-gh-text-secondary">50 000</td>
+                            </tr>
+                            <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                <td class="border border-gh-border p-2 font-medium text-gh-text">Deuxième année en Licence-L2</td>
+                                <td class="border border-gh-border p-2 text-center text-gh-text-secondary">30 000</td>
+                                <td class="border border-gh-border p-2 text-center text-gh-text-secondary">55 000</td>
+                            </tr>
+                            <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                <td class="border border-gh-border p-2 font-medium text-gh-text">Première année de Master-M1</td>
+                                <td class="border border-gh-border p-2 text-center text-gh-text-secondary">40 000</td>
+                                <td class="border border-gh-border p-2 text-center text-gh-text-secondary">65 000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="mt-6 bg-gh-bg-tertiary border border-gh-border rounded-lg p-6">
+                <h3 class="text-xl font-bold text-warning mb-4">Remarque</h3>
+                <p class="text-gh-text-secondary mb-4 leading-relaxed">
+                    Pour tous les droits mentionnés dans le tableau, aucun remboursement ne sera effectué quel que soit le motif. Le paiement de la totalité des frais d'études (paiement des EC, unités d'enseignement fondamentales et unités d'enseignement complémentaires de chacun des deux (02) semestres) et du droit d'inscription à l'examen, un (01) mois avant les examens conditionne la participation à l'examen final.
+                </p>
+                <div class="bg-gh-bg border border-warning rounded-lg p-4 mb-4">
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 text-warning mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                        </svg>
+                        <p class="text-warning font-bold">Tout paiement en espèces aux agents du CRTE est strictement interdit.</p>
+                    </div>
+                </div>
+                <p class="text-gh-text-secondary mb-4">
+                    Il doit être effectué auprès de la banque assignée à chaque CRTE en précisant le nom de l'apprenant.
+                </p>
+                <div class="bg-gh-bg border border-primary rounded-lg p-4">
+                    <h4 class="font-bold text-primary mb-2">Des frais supplémentaires sont prévus pour les niveaux L3 et M2 :</h4>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <h5 class="font-semibold text-accent mb-1">L3</h5>
+                            <p class="text-gh-text-secondary">Frais de rapport des stage : <span class="font-bold text-gh-text">Ar 60 000</span></p>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold text-accent mb-1">M2</h5>
+                            <p class="text-gh-text-secondary">Frais d'encadrement : <span class="font-bold text-gh-text">Ar 150 000</span></p>
+                            <p class="text-gh-text-secondary">Frais de soutenance : <span class="font-bold text-gh-text">Ar 200 000</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Explications des cas -->
+        <div class="bg-gh-bg-secondary rounded-xl shadow-xl border border-gh-border p-6 md:p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gh-text mb-6 text-center">EXPLICATIONS DES CAS SUIVANT LA SITUATION DE L'APPRENANT</h2>
+            
+            <div class="space-y-6 text-gh-text-secondary">
+                <p class="leading-relaxed">
+                    Pour tout apprenant de tout niveau confondu et quel que soit sa situation (Passant, redoublant ou admis avec UE à rattraper), le droit d'inscription administrative et celui à l'examen sont respectivement égaux à 45 000 et 25 000 Ar. En plus de ces droits, l'apprenant doit s'acquitter des droits ci-après suivant le cas de l'apprenant.
+                </p>
+                
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-primary mb-4">Cas de "PASSANTS" :</h3>
+                    <p class="leading-relaxed">
+                        Les novices ou passants doivent payer le droit par élément constitutifs (EC) en considérant le nombre d'EC pout son niveau correspondant.
+                    </p>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-primary mb-4">Cas de "REDOUBLANTS" :</h3>
+                    <p class="leading-relaxed">
+                        Le redoublant doit payer le droit de redoublement correspondant à son niveau. En l'occurrence un apprenant redoublant en L2 paye le frais de redoublement d'un montant de Ar 120 000.
+                    </p>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-primary mb-4">Cas des "ADMIS AVEC UE A RATTRAPER" :</h3>
+                    <p class="leading-relaxed mb-4">
+                        En tant que passant, l'apprenant doit remplir :
+                    </p>
+                    <ul class="list-disc pl-6 space-y-2 mb-4">
+                        <li>les droits d'inscription administrative et des droits d'examen pour son niveau actuel</li>
+                        <li>les droits par éléments constitutifs suivant le niveau et le nombre d'EC</li>
+                    </ul>
+                    <p class="leading-relaxed mb-4">
+                        Et en rattrapant les UE non acquises, l'apprenant doit payer :
+                    </p>
+                    <ul class="list-disc pl-6 space-y-2 mb-4">
+                        <li>les droits d'inscription administrative et des droits d'examen pour le niveau de rattrapage</li>
+                        <li>le frais de rattrapage suivant le niveau L1, L2, ou M1</li>
+                    </ul>
+                    <div class="bg-gh-bg border border-accent rounded-lg p-4">
+                        <p class="text-accent font-medium">
+                            A noter que pour les niveaux L3 et M2, un apprenant doit valider toutes les UE pour obtenir le diplôme de Licence (L3) ou admis aux travaux de recherche (m2). Ceci sera expliqué dans la charte de contrôle des connaissances.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- CTA Section -->
+        <div class="bg-gradient-to-r from-gh-bg-tertiary to-gh-bg-secondary border border-primary rounded-xl p-6 md:p-8 mb-8 shadow-xl">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="mb-6 md:mb-0 md:mr-6">
+                    <h2 class="text-xl md:text-2xl font-bold text-primary mb-2">Prêt à vous inscrire ?</h2>
+                    <p class="text-gh-text-secondary">Consultez nos modalités de paiement pour plus d'informations sur les frais et les options de règlement.</p>
+                </div>
+                <a href="paiement.html" class="bg-primary hover:bg-secondary text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200 text-center">
+                    Voir les modalités de paiement
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gh-bg-secondary text-gh-text border-t border-gh-border mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid md:grid-cols-2 gap-8">
             <div>
-                <div>
-                    <ul>
-                        <li>MADAGASCAR</li>
-                        <li>Antananarivo - 101</li>
-                        <li>Lot IVC 6 - Ambomitsangana</li>
-                        <li>B.P.78</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <a
-                                href="tel:+261 20 22 600 57"
-                                class="hover:text-primary hover:underline"
-                                >Tel : +261 20 22 600 57</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="mailto:cntemad@cntemad.com"
-                                class="hover:text-primary hover:underline"
-                                >Email : cntemad@cntemad.com</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href=""
-                                class="hover:text-primary hover:underline"
-                                >Facebook : CNTEMAD Ofisialy</a
-                            >
-                        </li>
-                    </ul>
+                <h3 class="text-lg font-semibold mb-4 text-gh-text">Adresse</h3>
+                <div class="space-y-2 text-gh-text-secondary">
+                    <p>MADAGASCAR</p>
+                    <p>Antananarivo - 101</p>
+                    <p>Lot IVC 6 - Ambomitsangana</p>
+                    <p>B.P.78</p>
                 </div>
             </div>
-            <p>CNTEMAD</p>
-        </footer>
-        <script src="../js/script.js"></script>
-    </body>
+            
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-gh-text">Contact</h3>
+                <div class="space-y-2">
+                    <a href="tel:+261 20 22 600 57" class="text-gh-text-secondary hover:text-primary transition-colors duration-200 block">Tél : +261 20 22 600 57</a>
+                    <a href="mailto:cntemad@cntemad.com" class="text-gh-text-secondary hover:text-primary transition-colors duration-200 block">Email : cntemad@cntemad.com</a>
+                    <a href="#" class="text-gh-text-secondary hover:text-primary transition-colors duration-200 block">Facebook : CNTEMAD Officiel</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-gh-border mt-8 pt-8 text-center">
+            <p class="text-gh-text-muted">&copy; 2024 CNTEMAD. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
 </html>

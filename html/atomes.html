@@ -1,1049 +1,1059 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>Guide CNTEMAD 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#58a6ff',
+                        secondary: '#1f6feb',
+                        accent: '#56d364',
+                        warning: '#ffa657',
+                        purple: '#a5a3ff',
+                        'gh-bg': '#0d1117',
+                        'gh-bg-secondary': '#161b22',
+                        'gh-bg-tertiary': '#21262d',
+                        'gh-border': '#30363d',
+                        'gh-text': '#f0f6fc',
+                        'gh-text-secondary': '#8b949e',
+                        'gh-text-muted': '#656d76',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>CNTEMAD - Atomes Pédagogiques</title>
 </head>
+<body class="bg-gh-bg min-h-screen text-gh-text">
+    <!-- Header -->
+    <header class="bg-gh-bg-secondary shadow-xl border-b border-gh-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-primary">CNTEMAD</h1>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Accueil</a>
+                    <a href="filieres.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Filières</a>
+                    <a href="cursus.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Cursus</a>
+                    <a href="atomes.html" class="text-primary px-3 py-2 rounded-md text-sm font-medium bg-gh-bg-tertiary border border-gh-border">Livres</a>
+                    <a href="inscription.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Inscription</a>
+                    <a href="paiement.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Paiement</a>
+                </nav>
 
-<body>
-    <header>
-        <nav id="header-nav" class="hidden">
-            <ul>
-                <li>
-                    <a href="../index.html" class="group">
-                        Accueil
-                        <span class="scale-x-0 group-hover:scale-x-100"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="filieres.html" class="group">
-                        Filières
-                        <span class="scale-x-0 group-hover:scale-x-100"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="cursus.html" class="group">
-                        Cursus
-                        <span class="scale-x-0 group-hover:scale-x-100"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="atomes.html" class="group">
-                        Livres
-                        <span class="scale-x-0 group-hover:scale-x-100"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="inscription.html" class="group">
-                        Inscription
-                        <span class="scale-x-0 group-hover:scale-x-100"></span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <button id="header-arrow-button" class="md:hidden block" onclick="toggle_header()">
-            🔽
-        </button>
-    </header>
-    <main>
-
-        <ul
-            class="flex justify-center items-center px-4 bg-slate-800 text-slate-100 mx-auto py-4 gap-3 max-w-full
-            w-full overflow-x-auto"
-            >
-            <li><a href="#" class="link">Informatique</a></li>
-            <li>
-                <a href="#" class="link text-nowrap">Genie Industriel</a>
-            </li>
-            <li><a href="#" class="link">Télécommunication</a></li>
-            <li><a href="#" class="link">Droit</a></li>
-            <li><a href="#" class="link">Commerce</a></li>
-            <li><a href="#" class="link">Economie</a></li>
-            <li><a href="#" class="link">Communication</a></li>
-        </ul>
-
-        <h1 class="title0">ATOMES PEDAGOGIQUES</h1>
-
-        <section class="py-4 sm:px-4 md:mx-8">
-            <h2 id="l1" class="title1-light text-center py-4 bg-slate-900 rounded-t">
-                NIVEAU : L1
-            </h2>
-            <section class="pb-4 bg-sky-400 border-4 border-sky-900">
-                <div class="mx-auto mb-4 bg-slate-900 text-slate-100 w-fit p-4 border-4 border-sky-900">
-                    <h4>DOMAINE : SCIENCE DE L'INGÉNIEUR</h4>
-                    <h4>MENTION : INFORMATIQUE</h4>
-                    <h4>PARCOURS : BDGL-RS</h4>
-                    <h4>GRADE : LICENCE</h4>
-                </div>
-                <div class="grid lg:grid-cols-2 gap-4 justify-items-center">
-                    <table class="table-dark w-[360px]">
-                        <caption>
-                            SEMESTRE 1
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    UNITÉ D'ENSEIGNEMENT - ÉLÉMENTS
-                                    CONSTITUTIFS
-                                </td>
-                                <td>Crédit</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 1.1 : OUTILS SCIENTIFIQUES ET SYSTÈME
-                                    PHYSIQUE (OSSP)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>EC 01 : Électronique 1</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="livres/info/l1/bsn.html">EC 02 : Base des systèmes
-                                        numériques</a>
-                                </td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 03 : Mathématiques appliquées à
-                                    l'informatique 1
-                                </td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 1.2 : BASE DE L'INFORMATIQUE
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 04 : Architecture des ordinateurs
-                                </td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>EC 05 : Algorithmique</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>EC 06 : Technologie Web 1</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>TOTAL</td>
-                                <td>30</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table-dark w-[360px]">
-                        <caption id="l1_s2">
-                            SEMESTRE 2
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    UNITÉ D'ENSEIGNEMENT - ÉLÉMENTS
-                                    CONSTITUTIFS
-                                </td>
-                                <td>Crédit</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 2.1 : OUTILS SCIENTIFIQUES ET SYSTÈME
-                                    PHYSIQUE (OSSP)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>EC 07 : Métrologie</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>EC 08 : Électronique numérique 1</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 09 : Probabilité et statistique 1
-                                </td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 2.2 : BASE DE L'INFORMATIQUE
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>EC 10 : Programmation Pascal</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="livres/info/l1/geosi.html">EC 11 : GEOSI</a>
-                                </td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 2.3 : LANGUE ET CIVISME
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>EC 12 : Français</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 13 : Citoyenneté, civisme et
-                                    patriotisme
-                                </td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>TOTAL</td>
-                                <td>30</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-        </section>
-
-        <section class="py-4 sm:px-4 md:mx-8">
-            <h2 id="l2" class="title1-light text-center bg-slate-900 py-4 rounded-t">
-                NIVEAU : L2
-            </h2>
-            <section class="pb-4 bg-green-400 border-4 border-green-900">
-                <div class="mx-auto mb-4 bg-slate-900 text-slate-100 w-fit p-4 border-4 border-green-900">
-                    <h4>DOMAINE : SCIENCE DE L'INGÉNIEUR</h4>
-                    <h4>MENTION : INFORMATIQUE</h4>
-                    <h4>PARCOURS : BDGL-RS</h4>
-                    <h4>GRADE : LICENCE</h4>
-                </div>
-                <div class="grid lg:grid-cols-2 gap-4 justify-items-center">
-                    <table class="table-dark w-[360px]">
-                        <caption id="l2_s3">
-                            SEMESTRE 3
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    UNITÉ D'ENSEIGNEMENT - ÉLÉMENTS
-                                    CONSTITUTIFS
-                                </td>
-                                <td>Crédit</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 3.1 : OUTILS SCIENTIFIQUES ET SYSTÈME
-                                    PHYSIQUE (OSSP)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 01 : Mathématique appliquées à
-                                    l'Informatique 2
-                                </td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>EC 02 : Électronique 2</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 3.2 : PROGRAMMATION ET RÉSEAUX
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>EC 03 : Théorie des réseaux</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>EC 04 : Programmation C</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>EC 05 : Système d'exploitation</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>TOTAL</td>
-                                <td>30</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table-dark w-[360px]">
-                        <caption id="l2_s4">
-                            SEMESTRE 4
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    UNITÉ D'ENSEIGNEMENT - ÉLÉMENTS
-                                    CONSTITUTIFS
-                                </td>
-                                <td>Crédit</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 4.1 : OUTILS SCIENTIFIQUES ET SYSTÈME
-                                    PHYSIQUE (OSSP)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 06 : Probabilité et statistique 2
-                                </td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>EC 07 : Électronique numérique 2</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 08 : Circuits mémoires et logique
-                                    programmable
-                                </td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 4.2 : PROGRAMMATION ET RÉSEAUX
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>EC 09 : Réseaux locaux d'entreprise</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>EC 10 : Technologie Web 2</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>EC 11 : Structure des données</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>TOTAL</td>
-                                <td>30</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-        </section>
-
-        <section class="py-4 sm:px-4 md:mx-8">
-            <h2 id="l3" class="title1-light text-center bg-slate-900 py-4 rounded-t">
-                NIVEAU : L3
-            </h2>
-            <section class="pb-4 bg-yellow-400 border-4 border-yellow-900">
-                <div class="mx-auto mb-4 bg-slate-900 text-slate-100 w-fit p-4 border-4 border-yellow-900">
-                    <h4>DOMAINE : SCIENCE DE L'INGÉNIEUR</h4>
-                    <h4>MENTION : INFORMATIQUE</h4>
-                    <h4>PARCOURS : BDGL</h4>
-                    <h4>GRADE : LICENCE</h4>
-                </div>
-                <div class="grid lg:grid-cols-2 gap-4 justify-items-center border-b-4 border-yellow-900 pb-4">
-                    <table class="table-dark w-[360px]">
-                        <caption id="l3_s5_bdgl">
-                            SEMESTRE 5
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    UNITÉ D'ENSEIGNEMENT - ÉLÉMENTS
-                                    CONSTITUTIFS
-                                </td>
-                                <td>Crédit</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 5.1 : SYSTÈME D'INFORMATION
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 01 : Conception de base de données
-                                </td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 02 : Méthodologie de conception
-                                    MERISE
-                                </td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>EC 03 : Langage SQL</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 04 : Introduction au Génie Logiciel
-                                </td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">UE 5.2 : PROGRAMMATION</td>
-                            </tr>
-                            <tr>
-                                <td>EC 05 : Programmation Java</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>EC 06 : Développement sous Android</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>EC 07 : Langage de script</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>TOTAL</td>
-                                <td>30</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table-dark w-[360px]">
-                        <caption id="l3_s6_bdgl">
-                            SEMESTRE 6
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    UNITÉ D'ENSEIGNEMENT - ÉLÉMENTS
-                                    CONSTITUTIFS
-                                </td>
-                                <td>Crédit</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 6.1 : SYSTÈME D'INFORMATION
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>EC 08 : Web dynamique</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>EC 09 : Oracle</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">UE 6.2 : PROGRAMMATION</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 10 : Programmation Orientée Objet
-                                </td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>EC 11 : Assembleur</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>EC 12 : Microprocesseur</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 13 : Développement d'application
-                                    d'entreprise
-                                </td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">UE 6.3 : STAGE</td>
-                            </tr>
-                            <tr>
-                                <td>EC 14 : Rapport de stage</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <td>TOTAL</td>
-                                <td>30</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="mx-auto mb-4 bg-slate-900 text-slate-100 w-fit p-4 border-4 border-yellow-900">
-                    <h4>DOMAINE : SCIENCE DE L'INGÉNIEUR</h4>
-                    <h4>MENTION : INFORMATIQUE</h4>
-                    <h4>PARCOURS : RS</h4>
-                    <h4>GRADE : LICENCE</h4>
-                </div>
-                <div class="grid lg:grid-cols-2 gap-4 justify-items-center">
-                    <table class="table-dark w-[360px]">
-                        <caption id="l3_s5_rs">
-                            SEMESTRE 5
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    UNITÉ D'ENSEIGNEMENT - ÉLÉMENTS
-                                    CONSTITUTIFS
-                                </td>
-                                <td>Crédit</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 5.1 : SYSTÈME D'INFORMATION
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 01 : Conception de base de données
-                                </td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 02 : Méthodologie de conception
-                                    MERISE
-                                </td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">UE 5.2 : RÉSEAUX</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 03 : Administration système sous
-                                    Linux
-                                </td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <td>EC 04 : Réseaux locaux sans fils</td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">UE 5.3 : PROGRAMMATION</td>
-                            </tr>
-                            <tr>
-                                <td>EC 05 : Programmation Java</td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <td>EC 06 : Sécurité Informatique</td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <td>TOTAL</td>
-                                <td>30</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table-dark w-[360px]">
-                        <caption id="l3_s6_rs">
-                            SEMESTRE 6
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    UNITÉ D'ENSEIGNEMENT - ÉLÉMENTS
-                                    CONSTITUTIFS
-                                </td>
-                                <td>Crédit</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 6.1 : SYSTÈME D'INFORMATION
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 07 : Système de Gestion des Base de
-                                    Données Relationnelles
-                                </td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>EC 08 : Web dynamique</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 6.2 : RÉSEAUX ET PROGRAMMATION
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 09 : Administration réseaux sous
-                                    Windows et sous Linux
-                                </td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 10 : Administration système sous
-                                    windows
-                                </td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 11 : Programmation Orientée Objet
-                                </td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">UE 6.3 : STAGE</td>
-                            </tr>
-                            <tr>
-                                <td>EC 12 : Rapport de stage</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <td>TOTAL</td>
-                                <td>30</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-        </section>
-
-        <section class="py-4 sm:px-4 md:mx-8">
-            <h2 id="m1" class="title1-light text-center py-4 bg-slate-900 rounded-t">
-                NIVEAU : M1
-            </h2>
-            <section class="pb-4 bg-orange-400 border-4 border-orange-900">
-                <div class="mx-auto mb-4 bg-slate-900 text-slate-100 w-fit p-4 border-4 border-orange-900">
-                    <h4>DOMAINE : SCIENCE DE L'INGÉNIEUR</h4>
-                    <h4>MENTION : INFORMATIQUE</h4>
-                    <h4>PARCOURS : BDGL-RS</h4>
-                    <h4>GRADE : MASTER</h4>
-                </div>
-                <div class="grid lg:grid-cols-2 gap-4 justify-items-center">
-                    <table class="table-dark w-[360px]">
-                        <caption id="m1_s7">
-                            SEMESTRE 7
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    UNITÉ D'ENSEIGNEMENT - ÉLÉMENTS
-                                    CONSTITUTIFS
-                                </td>
-                                <td>Crédit</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 7.1 : OUTILS SCIENTIFIQUE EN
-                                    INFORMATIQUE
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>EC 01 : Maintenance informatique</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 02 : Mathématiques appliquées à la
-                                    communication et à l'informatique
-                                </td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">UE 7.2 : PROGRAMMATION</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 03 : Programmation Orientée Objet
-                                    avancée
-                                </td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>EC 04 : Web avancé</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 7.3 : SYSTÈME D'INFORMATION
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>EC 05 : Base de donnée avancée</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>EC 06 : UML</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>TOTAL</td>
-                                <td>30</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table-dark w-[360px]">
-                        <caption id="m1_s8">
-                            SEMESTRE 8
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    UNITÉ D'ENSEIGNEMENT - ÉLÉMENTS
-                                    CONSTITUTIFS
-                                </td>
-                                <td>Crédit</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 8.1 : OUTILS SCIENTIFIQUE EN
-                                    INFORMATIQUE
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 07 : Théorie des nombres et
-                                    Cryptographie
-                                </td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>EC 08 : Interface Homme-Machine</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>EC 09 : Recherche opérationnelle</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">UE 8.2 : RÉSEAUX</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 10 : Système de télécommunication
-                                </td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 11 : Réseaux de télécommunication
-                                </td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>TOTAL</td>
-                                <td>30</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-        </section>
-
-        <section class="py-4 sm:px-4 md:mx-8">
-            <h2 id="m2" class="title1-light text-center bg-slate-900 py-4 rounded-t">
-                NIVEAU : M2
-            </h2>
-            <section class="pb-4 bg-red-400 border-4 border-red-900">
-                <div class="mx-auto mb-4 bg-slate-900 text-slate-100 w-fit p-4 border-4 border-red-900">
-                    <h4>DOMAINE : SCIENCE DE L'INGÉNIEUR</h4>
-                    <h4>MENTION : INFORMATIQUE</h4>
-                    <h4>PARCOURS : BDGL</h4>
-                    <h4>GRADE : MASTER</h4>
-                </div>
-                <div class="grid lg:grid-cols-2 gap-4 justify-items-center border-b-4 border-red-900 pb-4">
-                    <table class="table-dark w-[360px]">
-                        <caption id="m2_s9_bdgl">
-                            SEMESTRE 9
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    UNITÉ D'ENSEIGNEMENT - ÉLÉMENTS
-                                    CONSTITUTIFS
-                                </td>
-                                <td>Crédit</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 9.1 : OUTILS SCIENTIFIQUE EN
-                                    INFORMATIQUE
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 01 : Ingénierie des réseaux
-                                    informatiques
-                                </td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>EC 02 : Intelligence artificielle</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>EC 03 : Droit international des TIC</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>EC 04 : Génie Logiciel</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 9.2 : SYSTÈME D'INFORMATION
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 05 : Système d'information en
-                                    entreprise
-                                </td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 06 : Développement web et services
-                                </td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>TOTAL</td>
-                                <td>30</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table-dark w-[360px]">
-                        <caption id="m2_s10_bdgl">
-                            SEMESTRE 10
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    UNITÉ D'ENSEIGNEMENT - ÉLÉMENTS
-                                    CONSTITUTIFS
-                                </td>
-                                <td>Crédit</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 10.1 : SYSTÈME D'INFORMATION
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 07 : Système d'information
-                                    décisionnel
-                                </td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 08 : Sécurité des systèmes
-                                    d'information
-                                </td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 10.2 : PROGRAMMATION
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>EC 9 : Cloud Computing</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 10 : Développement d'application
-                                    mobile
-                                </td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 11 : Administration système avancée
-                                </td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 10.3 : PROJET ET MÉMOIRE
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>EC 12 : Mémoire de fin d'étude</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <td>TOTAL</td>
-                                <td>30</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="mx-auto mb-4 bg-slate-900 text-slate-100 w-fit p-4 border-4 border-red-900">
-                    <h4>DOMAINE : SCIENCE DE L'INGÉNIEUR</h4>
-                    <h4>MENTION : INFORMATIQUE</h4>
-                    <h4>PARCOURS : RS</h4>
-                    <h4>GRADE : MASTER</h4>
-                </div>
-                <div class="grid lg:grid-cols-2 gap-4 justify-items-center">
-                    <table class="table-dark w-[360px]">
-                        <caption id="m2_s9_rs">
-                            SEMESTRE 9
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    UNITÉ D'ENSEIGNEMENT - ÉLÉMENTS
-                                    CONSTITUTIFS
-                                </td>
-                                <td>Crédit</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 9.1 : OUTILS SCIENTIFIQUE EN
-                                    INFORMATIQUE
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 01 : Ingénierie des réseaux
-                                    informatiques
-                                </td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 02 : Administration réseau avancée
-                                </td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>EC 03 : Droit international des TIC</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    EC 04 : Exploitation et routage Internet
-                                </td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 9.2 : RÉSEAUX
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>EC 05 : Réseaux WIFI et WiMAX</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>EC 06 : Réseaux TCP/IP Avancés</td>
-                                <td>6</td>
-                            </tr>
-                            <tr>
-                                <td>TOTAL</td>
-                                <td>30</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table-dark w-[360px]">
-                        <caption id="m2_s10_rs">
-                            SEMESTRE 10
-                        </caption>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    UNITÉ D'ENSEIGNEMENT - ÉLÉMENTS
-                                    CONSTITUTIFS
-                                </td>
-                                <td>Crédit</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 10.1 : SYSTÈME D'INFORMATION
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>EC 07 : Système embarqué</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>EC 08 : Sécurité réseau</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>EC 9 : Voix sur IP</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 10.2 : PROGRAMMATION
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>EC 10 : Programmation réseau</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>EC 11 : Programmation système</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    UE 10.3 : TRAVAUX DE RECHERCHE
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>EC 12 : Mémoire de fin d'étude</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <td>TOTAL</td>
-                                <td>30</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-        </section>
-    </main>
-    <footer>
-        <div>
-            <div>
-                <ul>
-                    <li>MADAGASCAR</li>
-                    <li>Antananarivo - 101</li>
-                    <li>Lot IVC 6 - Ambomitsangana</li>
-                    <li>B.P.78</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="tel:+261 20 22 600 57" class="hover:text-primary hover:underline">Tel : +261 20 22 600
-                            57</a>
-                    </li>
-                    <li>
-                        <a href="mailto:cntemad@cntemad.com" class="hover:text-primary hover:underline">Email :
-                            cntemad@cntemad.com</a>
-                    </li>
-                    <li>
-                        <a href="" class="hover:text-primary hover:underline">Facebook : CNTEMAD Ofisialy</a>
-                    </li>
-                </ul>
+                <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gh-text-secondary hover:text-primary hover:bg-gh-bg-tertiary transition-colors duration-200">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
             </div>
         </div>
-        <p>CNTEMAD</p>
-    </footer>
-    <script src="../js/script.js"></script>
-</body>
 
+        <div id="mobile-menu" class="md:hidden hidden bg-gh-bg-secondary border-t border-gh-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Accueil</a>
+                <a href="filieres.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Filières</a>
+                <a href="cursus.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Cursus</a>
+                <a href="atomes.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium bg-gh-bg-tertiary border border-gh-border">Livres</a>
+                <a href="inscription.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Inscription</a>
+                <a href="paiement.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Paiement</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Subject Filter -->
+    <div class="bg-gh-bg-secondary border-b border-gh-border sticky top-16 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center py-4 gap-3 overflow-x-auto">
+                <button class="filter-btn active bg-primary text-white px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-200 hover:bg-secondary" data-filter="all">
+                    Tous
+                </button>
+                <button class="filter-btn bg-gh-bg-tertiary hover:bg-gh-border text-gh-text-secondary hover:text-primary px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-200 border border-gh-border" data-filter="informatique">
+                    Informatique
+                </button>
+                <button class="filter-btn bg-gh-bg-tertiary hover:bg-gh-border text-gh-text-secondary hover:text-primary px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-200 border border-gh-border" data-filter="genie">
+                    Génie Industriel
+                </button>
+                <button class="filter-btn bg-gh-bg-tertiary hover:bg-gh-border text-gh-text-secondary hover:text-primary px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-200 border border-gh-border" data-filter="telecom">
+                    Télécommunication
+                </button>
+                <button class="filter-btn bg-gh-bg-tertiary hover:bg-gh-border text-gh-text-secondary hover:text-primary px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-200 border border-gh-border" data-filter="droit">
+                    Droit
+                </button>
+                <button class="filter-btn bg-gh-bg-tertiary hover:bg-gh-border text-gh-text-secondary hover:text-primary px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-200 border border-gh-border" data-filter="commerce">
+                    Commerce
+                </button>
+                <button class="filter-btn bg-gh-bg-tertiary hover:bg-gh-border text-gh-text-secondary hover:text-primary px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-200 border border-gh-border" data-filter="economie">
+                    Économie
+                </button>
+                <button class="filter-btn bg-gh-bg-tertiary hover:bg-gh-border text-gh-text-secondary hover:text-primary px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-200 border border-gh-border" data-filter="communication">
+                    Communication
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Page Title -->
+        <div class="text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-gh-text mb-4">ATOMES PÉDAGOGIQUES</h1>
+            <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+        </div>
+
+        <!-- L1 Level -->
+        <section class="mb-12 level-section" data-level="l1">
+            <div class="bg-gh-bg-secondary rounded-xl shadow-xl border border-gh-border overflow-hidden">
+                <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-4">
+                    <h2 class="text-2xl font-bold">NIVEAU : L1</h2>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary p-6">
+                    <div class="bg-gh-bg text-gh-text p-4 rounded-lg mb-6 text-center border border-gh-border">
+                        <h4 class="font-semibold">DOMAINE : SCIENCE DE L'INGÉNIEUR</h4>
+                        <h4 class="font-semibold">MENTION : INFORMATIQUE</h4>
+                        <h4 class="font-semibold">PARCOURS : BDGL-RS</h4>
+                        <h4 class="font-semibold">GRADE : LICENCE</h4>
+                    </div>
+                    
+                    <div class="grid lg:grid-cols-2 gap-6">
+                        <!-- Semester 1 -->
+                        <div class="bg-gh-bg-secondary rounded-lg shadow-md overflow-hidden border border-gh-border hover:border-primary transition-colors duration-200">
+                            <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white text-center py-3">
+                                <h3 class="font-bold">SEMESTRE 1</h3>
+                            </div>
+                            <div class="p-4">
+                                <div class="space-y-3">
+                                    <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                        <h4 class="font-bold text-primary mb-2">UE 1.1 : OUTILS SCIENTIFIQUES ET SYSTÈME PHYSIQUE (OSSP)</h4>
+                                        <div class="space-y-2 text-sm">
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 01 : Électronique 1</span>
+                                                <span class="font-semibold text-accent">4</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span><a href="livres/info/l1/bsn.html" class="text-primary hover:text-secondary hover:underline transition-colors duration-200">EC 02 : Base des systèmes numériques</a></span>
+                                                <span class="font-semibold text-accent">4</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 03 : Mathématiques appliquées à l'informatique 1</span>
+                                                <span class="font-semibold text-accent">4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                        <h4 class="font-bold text-primary mb-2">UE 1.2 : BASE DE L'INFORMATIQUE</h4>
+                                        <div class="space-y-2 text-sm">
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 04 : Architecture des ordinateurs</span>
+                                                <span class="font-semibold text-accent">6</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 05 : Algorithmique</span>
+                                                <span class="font-semibold text-accent">6</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 06 : Technologie Web 1</span>
+                                                <span class="font-semibold text-accent">6</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-gradient-to-r from-accent to-green-500 p-2 rounded text-center font-bold text-white">
+                                        TOTAL : 30 crédits
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Semester 2 -->
+                        <div class="bg-gh-bg-secondary rounded-lg shadow-md overflow-hidden border border-gh-border hover:border-primary transition-colors duration-200">
+                            <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white text-center py-3">
+                                <h3 class="font-bold">SEMESTRE 2</h3>
+                            </div>
+                            <div class="p-4">
+                                <div class="space-y-3">
+                                    <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                        <h4 class="font-bold text-primary mb-2">UE 2.1 : OUTILS SCIENTIFIQUES ET SYSTÈME PHYSIQUE (OSSP)</h4>
+                                        <div class="space-y-2 text-sm">
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 07 : Métrologie</span>
+                                                <span class="font-semibold text-accent">4</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 08 : Électronique numérique 1</span>
+                                                <span class="font-semibold text-accent">4</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 09 : Probabilité et statistique 1</span>
+                                                <span class="font-semibold text-accent">6</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                        <h4 class="font-bold text-primary mb-2">UE 2.2 : BASE DE L'INFORMATIQUE</h4>
+                                        <div class="space-y-2 text-sm">
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 10 : Programmation Pascal</span>
+                                                <span class="font-semibold text-accent">6</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span><a href="livres/info/l1/geosi.html" class="text-primary hover:text-secondary hover:underline transition-colors duration-200">EC 11 : GEOSI</a></span>
+                                                <span class="font-semibold text-accent">4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                        <h4 class="font-bold text-primary mb-2">UE 2.3 : LANGUE ET CIVISME</h4>
+                                        <div class="space-y-2 text-sm">
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 12 : Français</span>
+                                                <span class="font-semibold text-accent">3</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 13 : Citoyenneté, civisme et patriotisme</span>
+                                                <span class="font-semibold text-accent">3</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-gradient-to-r from-accent to-green-500 p-2 rounded text-center font-bold text-white">
+                                        TOTAL : 30 crédits
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- L2 Level -->
+        <section class="mb-12 level-section" data-level="l2">
+            <div class="bg-gh-bg-secondary rounded-xl shadow-xl border border-gh-border overflow-hidden">
+                <div class="bg-gradient-to-r from-green-600 to-green-700 text-white text-center py-4">
+                    <h2 class="text-2xl font-bold">NIVEAU : L2</h2>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary p-6">
+                    <div class="bg-gh-bg text-gh-text p-4 rounded-lg mb-6 text-center border border-gh-border">
+                        <h4 class="font-semibold">DOMAINE : SCIENCE DE L'INGÉNIEUR</h4>
+                        <h4 class="font-semibold">MENTION : INFORMATIQUE</h4>
+                        <h4 class="font-semibold">PARCOURS : BDGL-RS</h4>
+                        <h4 class="font-semibold">GRADE : LICENCE</h4>
+                    </div>
+                    
+                    <div class="grid lg:grid-cols-2 gap-6">
+                        <!-- Semester 3 -->
+                        <div class="bg-gh-bg-secondary rounded-lg shadow-md overflow-hidden border border-gh-border hover:border-accent transition-colors duration-200">
+                            <div class="bg-gradient-to-r from-green-500 to-green-600 text-white text-center py-3">
+                                <h3 class="font-bold">SEMESTRE 3</h3>
+                            </div>
+                            <div class="p-4">
+                                <div class="space-y-3">
+                                    <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                        <h4 class="font-bold text-accent mb-2">UE 3.1 : OUTILS SCIENTIFIQUES ET SYSTÈME PHYSIQUE (OSSP)</h4>
+                                        <div class="space-y-2 text-sm">
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 01 : Mathématique appliquées à l'Informatique 2</span>
+                                                <span class="font-semibold text-primary">6</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 02 : Électronique 2</span>
+                                                <span class="font-semibold text-primary">6</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                        <h4 class="font-bold text-accent mb-2">UE 3.2 : PROGRAMMATION ET RÉSEAUX</h4>
+                                        <div class="space-y-2 text-sm">
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 03 : Théorie des réseaux</span>
+                                                <span class="font-semibold text-primary">6</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 04 : Programmation C</span>
+                                                <span class="font-semibold text-primary">6</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 05 : Système d'exploitation</span>
+                                                <span class="font-semibold text-primary">6</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-gradient-to-r from-primary to-blue-500 p-2 rounded text-center font-bold text-white">
+                                        TOTAL : 30 crédits
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Semester 4 -->
+                        <div class="bg-gh-bg-secondary rounded-lg shadow-md overflow-hidden border border-gh-border hover:border-accent transition-colors duration-200">
+                            <div class="bg-gradient-to-r from-green-500 to-green-600 text-white text-center py-3">
+                                <h3 class="font-bold">SEMESTRE 4</h3>
+                            </div>
+                            <div class="p-4">
+                                <div class="space-y-3">
+                                    <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                        <h4 class="font-bold text-accent mb-2">UE 4.1 : OUTILS SCIENTIFIQUES ET SYSTÈME PHYSIQUE (OSSP)</h4>
+                                        <div class="space-y-2 text-sm">
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 06 : Probabilité et statistique 2</span>
+                                                <span class="font-semibold text-primary">4</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 07 : Électronique numérique 2</span>
+                                                <span class="font-semibold text-primary">6</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 08 : Circuits mémoires et logique programmable</span>
+                                                <span class="font-semibold text-primary">6</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                        <h4 class="font-bold text-accent mb-2">UE 4.2 : PROGRAMMATION ET RÉSEAUX</h4>
+                                        <div class="space-y-2 text-sm">
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 09 : Réseaux locaux d'entreprise</span>
+                                                <span class="font-semibold text-primary">6</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 10 : Technologie Web 2</span>
+                                                <span class="font-semibold text-primary">4</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 11 : Structure des données</span>
+                                                <span class="font-semibold text-primary">4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-gradient-to-r from-primary to-blue-500 p-2 rounded text-center font-bold text-white">
+                                        TOTAL : 30 crédits
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- L3 Level -->
+        <section class="mb-12 level-section" data-level="l3">
+            <div class="bg-gh-bg-secondary rounded-xl shadow-xl border border-gh-border overflow-hidden">
+                <div class="bg-gradient-to-r from-yellow-600 to-orange-600 text-white text-center py-4">
+                    <h2 class="text-2xl font-bold">NIVEAU : L3</h2>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary p-6">
+                    <!-- BDGL Track -->
+                    <div class="mb-8">
+                        <div class="bg-gh-bg text-gh-text p-4 rounded-lg mb-6 text-center border border-gh-border">
+                            <h4 class="font-semibold">DOMAINE : SCIENCE DE L'INGÉNIEUR</h4>
+                            <h4 class="font-semibold">MENTION : INFORMATIQUE</h4>
+                            <h4 class="font-semibold">PARCOURS : BDGL</h4>
+                            <h4 class="font-semibold">GRADE : LICENCE</h4>
+                        </div>
+                        
+                        <div class="grid lg:grid-cols-2 gap-6 mb-8">
+                            <!-- Semester 5 BDGL -->
+                            <div class="bg-gh-bg-secondary rounded-lg shadow-md overflow-hidden border border-gh-border hover:border-warning transition-colors duration-200">
+                                <div class="bg-gradient-to-r from-yellow-500 to-orange-500 text-white text-center py-3">
+                                    <h3 class="font-bold">SEMESTRE 5</h3>
+                                </div>
+                                <div class="p-4">
+                                    <div class="space-y-3">
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-warning mb-2">UE 5.1 : SYSTÈME D'INFORMATION</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 01 : Conception de base de données</span>
+                                                    <span class="font-semibold text-accent">4</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 02 : Méthodologie de conception MERISE</span>
+                                                    <span class="font-semibold text-accent">4</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 03 : Langage SQL</span>
+                                                    <span class="font-semibold text-accent">4</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 04 : Introduction au Génie Logiciel</span>
+                                                    <span class="font-semibold text-accent">4</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-warning mb-2">UE 5.2 : PROGRAMMATION</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 05 : Programmation Java</span>
+                                                    <span class="font-semibold text-accent">6</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 06 : Développement sous Android</span>
+                                                    <span class="font-semibold text-accent">4</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 07 : Langage de script</span>
+                                                    <span class="font-semibold text-accent">4</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gradient-to-r from-warning to-orange-500 p-2 rounded text-center font-bold text-white">
+                                            TOTAL : 30 crédits
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Semester 6 BDGL -->
+                            <div class="bg-gh-bg-secondary rounded-lg shadow-md overflow-hidden border border-gh-border hover:border-warning transition-colors duration-200">
+                                <div class="bg-gradient-to-r from-yellow-500 to-orange-500 text-white text-center py-3">
+                                    <h3 class="font-bold">SEMESTRE 6</h3>
+                                </div>
+                                <div class="p-4">
+                                    <div class="space-y-3">
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-warning mb-2">UE 6.1 : SYSTÈME D'INFORMATION</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 08 : Web dynamique</span>
+                                                    <span class="font-semibold text-accent">4</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 09 : Oracle</span>
+                                                    <span class="font-semibold text-accent">4</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-warning mb-2">UE 6.2 : PROGRAMMATION</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 10 : Programmation Orientée Objet</span>
+                                                    <span class="font-semibold text-accent">3</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 11 : Assembleur</span>
+                                                    <span class="font-semibold text-accent">3</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 12 : Microprocesseur</span>
+                                                    <span class="font-semibold text-accent">3</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 13 : Développement d'application d'entreprise</span>
+                                                    <span class="font-semibold text-accent">3</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-warning mb-2">UE 6.3 : STAGE</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 14 : Rapport de stage</span>
+                                                    <span class="font-semibold text-accent">10</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gradient-to-r from-warning to-orange-500 p-2 rounded text-center font-bold text-white">
+                                            TOTAL : 30 crédits
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RS Track -->
+                    <div class="border-t-4 border-warning pt-8">
+                        <div class="bg-gh-bg text-gh-text p-4 rounded-lg mb-6 text-center border border-gh-border">
+                            <h4 class="font-semibold">DOMAINE : SCIENCE DE L'INGÉNIEUR</h4>
+                            <h4 class="font-semibold">MENTION : INFORMATIQUE</h4>
+                            <h4 class="font-semibold">PARCOURS : RS</h4>
+                            <h4 class="font-semibold">GRADE : LICENCE</h4>
+                        </div>
+                        
+                        <div class="grid lg:grid-cols-2 gap-6">
+                            <!-- Semester 5 RS -->
+                            <div class="bg-gh-bg-secondary rounded-lg shadow-md overflow-hidden border border-gh-border hover:border-warning transition-colors duration-200">
+                                <div class="bg-gradient-to-r from-yellow-500 to-orange-500 text-white text-center py-3">
+                                    <h3 class="font-bold">SEMESTRE 5</h3>
+                                </div>
+                                <div class="p-4">
+                                    <div class="space-y-3">
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-warning mb-2">UE 5.1 : SYSTÈME D'INFORMATION</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 01 : Conception de base de données</span>
+                                                    <span class="font-semibold text-accent">6</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 02 : Méthodologie de conception MERISE</span>
+                                                    <span class="font-semibold text-accent">4</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-warning mb-2">UE 5.2 : RÉSEAUX</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 03 : Administration système sous Linux</span>
+                                                    <span class="font-semibold text-accent">5</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 04 : Réseaux locaux sans fils</span>
+                                                    <span class="font-semibold text-accent">5</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-warning mb-2">UE 5.3 : PROGRAMMATION</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 05 : Programmation Java</span>
+                                                    <span class="font-semibold text-accent">5</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 06 : Sécurité Informatique</span>
+                                                    <span class="font-semibold text-accent">5</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gradient-to-r from-warning to-orange-500 p-2 rounded text-center font-bold text-white">
+                                            TOTAL : 30 crédits
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Semester 6 RS -->
+                            <div class="bg-gh-bg-secondary rounded-lg shadow-md overflow-hidden border border-gh-border hover:border-warning transition-colors duration-200">
+                                <div class="bg-gradient-to-r from-yellow-500 to-orange-500 text-white text-center py-3">
+                                    <h3 class="font-bold">SEMESTRE 6</h3>
+                                </div>
+                                <div class="p-4">
+                                    <div class="space-y-3">
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-warning mb-2">UE 6.1 : SYSTÈME D'INFORMATION</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 07 : Système de Gestion des Base de Données Relationnelles</span>
+                                                    <span class="font-semibold text-accent">4</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 08 : Web dynamique</span>
+                                                    <span class="font-semibold text-accent">4</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-warning mb-2">UE 6.2 : RÉSEAUX ET PROGRAMMATION</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 09 : Administration réseaux sous Windows et sous Linux</span>
+                                                    <span class="font-semibold text-accent">4</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 10 : Administration système sous windows</span>
+                                                    <span class="font-semibold text-accent">4</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 11 : Programmation Orientée Objet</span>
+                                                    <span class="font-semibold text-accent">4</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-warning mb-2">UE 6.3 : STAGE</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 12 : Rapport de stage</span>
+                                                    <span class="font-semibold text-accent">10</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gradient-to-r from-warning to-orange-500 p-2 rounded text-center font-bold text-white">
+                                            TOTAL : 30 crédits
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- M1 Level -->
+        <section class="mb-12 level-section" data-level="m1">
+            <div class="bg-gh-bg-secondary rounded-xl shadow-xl border border-gh-border overflow-hidden">
+                <div class="bg-gradient-to-r from-orange-600 to-red-600 text-white text-center py-4">
+                    <h2 class="text-2xl font-bold">NIVEAU : M1</h2>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary p-6">
+                    <div class="bg-gh-bg text-gh-text p-4 rounded-lg mb-6 text-center border border-gh-border">
+                        <h4 class="font-semibold">DOMAINE : SCIENCE DE L'INGÉNIEUR</h4>
+                        <h4 class="font-semibold">MENTION : INFORMATIQUE</h4>
+                        <h4 class="font-semibold">PARCOURS : BDGL-RS</h4>
+                        <h4 class="font-semibold">GRADE : MASTER</h4>
+                    </div>
+                    
+                    <div class="grid lg:grid-cols-2 gap-6">
+                        <!-- Semester 7 -->
+                        <div class="bg-gh-bg-secondary rounded-lg shadow-md overflow-hidden border border-gh-border hover:border-red-500 transition-colors duration-200">
+                            <div class="bg-gradient-to-r from-orange-500 to-red-500 text-white text-center py-3">
+                                <h3 class="font-bold">SEMESTRE 7</h3>
+                            </div>
+                            <div class="p-4">
+                                <div class="space-y-3">
+                                    <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                        <h4 class="font-bold text-red-400 mb-2">UE 7.1 : OUTILS SCIENTIFIQUE EN INFORMATIQUE</h4>
+                                        <div class="space-y-2 text-sm">
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 01 : Maintenance informatique</span>
+                                                <span class="font-semibold text-purple">6</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 02 : Mathématiques appliquées à la communication et à l'informatique</span>
+                                                <span class="font-semibold text-purple">4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                        <h4 class="font-bold text-red-400 mb-2">UE 7.2 : PROGRAMMATION</h4>
+                                        <div class="space-y-2 text-sm">
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 03 : Programmation Orientée Objet avancée</span>
+                                                <span class="font-semibold text-purple">6</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 04 : Web avancé</span>
+                                                <span class="font-semibold text-purple">4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                        <h4 class="font-bold text-red-400 mb-2">UE 7.3 : SYSTÈME D'INFORMATION</h4>
+                                        <div class="space-y-2 text-sm">
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 05 : Base de donnée avancée</span>
+                                                <span class="font-semibold text-purple">6</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 06 : UML</span>
+                                                <span class="font-semibold text-purple">4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-gradient-to-r from-red-500 to-pink-500 p-2 rounded text-center font-bold text-white">
+                                        TOTAL : 30 crédits
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Semester 8 -->
+                        <div class="bg-gh-bg-secondary rounded-lg shadow-md overflow-hidden border border-gh-border hover:border-red-500 transition-colors duration-200">
+                            <div class="bg-gradient-to-r from-orange-500 to-red-500 text-white text-center py-3">
+                                <h3 class="font-bold">SEMESTRE 8</h3>
+                            </div>
+                            <div class="p-4">
+                                <div class="space-y-3">
+                                    <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                        <h4 class="font-bold text-red-400 mb-2">UE 8.1 : OUTILS SCIENTIFIQUE EN INFORMATIQUE</h4>
+                                        <div class="space-y-2 text-sm">
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 07 : Théorie des nombres et Cryptographie</span>
+                                                <span class="font-semibold text-purple">6</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 08 : Interface Homme-Machine</span>
+                                                <span class="font-semibold text-purple">6</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 09 : Recherche opérationnelle</span>
+                                                <span class="font-semibold text-purple">6</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                        <h4 class="font-bold text-red-400 mb-2">UE 8.2 : RÉSEAUX</h4>
+                                        <div class="space-y-2 text-sm">
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 10 : Système de télécommunication</span>
+                                                <span class="font-semibold text-purple">6</span>
+                                            </div>
+                                            <div class="flex justify-between text-gh-text-secondary">
+                                                <span>EC 11 : Réseaux de télécommunication</span>
+                                                <span class="font-semibold text-purple">6</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-gradient-to-r from-red-500 to-pink-500 p-2 rounded text-center font-bold text-white">
+                                        TOTAL : 30 crédits
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- M2 Level -->
+        <section class="mb-12 level-section" data-level="m2">
+            <div class="bg-gh-bg-secondary rounded-xl shadow-xl border border-gh-border overflow-hidden">
+                <div class="bg-gradient-to-r from-red-600 to-red-700 text-white text-center py-4">
+                    <h2 class="text-2xl font-bold">NIVEAU : M2</h2>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary p-6">
+                    <!-- BDGL Track -->
+                    <div class="mb-8">
+                        <div class="bg-gh-bg text-gh-text p-4 rounded-lg mb-6 text-center border border-gh-border">
+                            <h4 class="font-semibold">DOMAINE : SCIENCE DE L'INGÉNIEUR</h4>
+                            <h4 class="font-semibold">MENTION : INFORMATIQUE</h4>
+                            <h4 class="font-semibold">PARCOURS : BDGL</h4>
+                            <h4 class="font-semibold">GRADE : MASTER</h4>
+                        </div>
+                        
+                        <div class="grid lg:grid-cols-2 gap-6 mb-8">
+                            <!-- Semester 9 BDGL -->
+                            <div class="bg-gh-bg-secondary rounded-lg shadow-md overflow-hidden border border-gh-border hover:border-red-400 transition-colors duration-200">
+                                <div class="bg-gradient-to-r from-red-500 to-red-600 text-white text-center py-3">
+                                    <h3 class="font-bold">SEMESTRE 9</h3>
+                                </div>
+                                <div class="p-4">
+                                    <div class="space-y-3">
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-red-400 mb-2">UE 9.1 : OUTILS SCIENTIFIQUE EN INFORMATIQUE</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 01 : Ingénierie des réseaux informatiques</span>
+                                                    <span class="font-semibold text-purple">4</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 02 : Intelligence artificielle</span>
+                                                    <span class="font-semibold text-purple">4</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 03 : Droit international des TIC</span>
+                                                    <span class="font-semibold text-purple">4</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 04 : Génie Logiciel</span>
+                                                    <span class="font-semibold text-purple">6</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-red-400 mb-2">UE 9.2 : SYSTÈME D'INFORMATION</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 05 : Système d'information en entreprise</span>
+                                                    <span class="font-semibold text-purple">6</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 06 : Développement web et services</span>
+                                                    <span class="font-semibold text-purple">6</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gradient-to-r from-red-500 to-pink-500 p-2 rounded text-center font-bold text-white">
+                                            TOTAL : 30 crédits
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Semester 10 BDGL -->
+                            <div class="bg-gh-bg-secondary rounded-lg shadow-md overflow-hidden border border-gh-border hover:border-red-400 transition-colors duration-200">
+                                <div class="bg-gradient-to-r from-red-500 to-red-600 text-white text-center py-3">
+                                    <h3 class="font-bold">SEMESTRE 10</h3>
+                                </div>
+                                <div class="p-4">
+                                    <div class="space-y-3">
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-red-400 mb-2">UE 10.1 : SYSTÈME D'INFORMATION</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 07 : Système d'information décisionnel</span>
+                                                    <span class="font-semibold text-purple">4</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 08 : Sécurité des systèmes d'information</span>
+                                                    <span class="font-semibold text-purple">4</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-red-400 mb-2">UE 10.2 : PROGRAMMATION</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 9 : Cloud Computing</span>
+                                                    <span class="font-semibold text-purple">4</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 10 : Développement d'application mobile</span>
+                                                    <span class="font-semibold text-purple">4</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 11 : Administration système avancée</span>
+                                                    <span class="font-semibold text-purple">4</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-red-400 mb-2">UE 10.3 : PROJET ET MÉMOIRE</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 12 : Mémoire de fin d'étude</span>
+                                                    <span class="font-semibold text-purple">10</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gradient-to-r from-red-500 to-pink-500 p-2 rounded text-center font-bold text-white">
+                                            TOTAL : 30 crédits
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RS Track -->
+                    <div class="border-t-4 border-red-600 pt-8">
+                        <div class="bg-gh-bg text-gh-text p-4 rounded-lg mb-6 text-center border border-gh-border">
+                            <h4 class="font-semibold">DOMAINE : SCIENCE DE L'INGÉNIEUR</h4>
+                            <h4 class="font-semibold">MENTION : INFORMATIQUE</h4>
+                            <h4 class="font-semibold">PARCOURS : RS</h4>
+                            <h4 class="font-semibold">GRADE : MASTER</h4>
+                        </div>
+                        
+                        <div class="grid lg:grid-cols-2 gap-6">
+                            <!-- Semester 9 RS -->
+                            <div class="bg-gh-bg-secondary rounded-lg shadow-md overflow-hidden border border-gh-border hover:border-red-400 transition-colors duration-200">
+                                <div class="bg-gradient-to-r from-red-500 to-red-600 text-white text-center py-3">
+                                    <h3 class="font-bold">SEMESTRE 9</h3>
+                                </div>
+                                <div class="p-4">
+                                    <div class="space-y-3">
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-red-400 mb-2">UE 9.1 : OUTILS SCIENTIFIQUE EN INFORMATIQUE</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 01 : Ingénierie des réseaux informatiques</span>
+                                                    <span class="font-semibold text-purple">6</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 02 : Administration réseau avancée</span>
+                                                    <span class="font-semibold text-purple">4</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 03 : Droit international des TIC</span>
+                                                    <span class="font-semibold text-purple">4</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 04 : Exploitation et routage Internet</span>
+                                                    <span class="font-semibold text-purple">4</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-red-400 mb-2">UE 9.2 : RÉSEAUX</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 05 : Réseaux WIFI et WiMAX</span>
+                                                    <span class="font-semibold text-purple">6</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 06 : Réseaux TCP/IP Avancés</span>
+                                                    <span class="font-semibold text-purple">6</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gradient-to-r from-red-500 to-pink-500 p-2 rounded text-center font-bold text-white">
+                                            TOTAL : 30 crédits
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Semester 10 RS -->
+                            <div class="bg-gh-bg-secondary rounded-lg shadow-md overflow-hidden border border-gh-border hover:border-red-400 transition-colors duration-200">
+                                <div class="bg-gradient-to-r from-red-500 to-red-600 text-white text-center py-3">
+                                    <h3 class="font-bold">SEMESTRE 10</h3>
+                                </div>
+                                <div class="p-4">
+                                    <div class="space-y-3">
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-red-400 mb-2">UE 10.1 : SYSTÈME D'INFORMATION</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 07 : Système embarqué</span>
+                                                    <span class="font-semibold text-purple">4</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 08 : Sécurité réseau</span>
+                                                    <span class="font-semibold text-purple">4</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 9 : Voix sur IP</span>
+                                                    <span class="font-semibold text-purple">4</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-red-400 mb-2">UE 10.2 : PROGRAMMATION</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 10 : Programmation réseau</span>
+                                                    <span class="font-semibold text-purple">4</span>
+                                                </div>
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 11 : Programmation système</span>
+                                                    <span class="font-semibold text-purple">4</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">
+                                            <h4 class="font-bold text-red-400 mb-2">UE 10.3 : TRAVAUX DE RECHERCHE</h4>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex justify-between text-gh-text-secondary">
+                                                    <span>EC 12 : Mémoire de fin d'étude</span>
+                                                    <span class="font-semibold text-purple">10</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-gradient-to-r from-red-500 to-pink-500 p-2 rounded text-center font-bold text-white">
+                                            TOTAL : 30 crédits
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gh-bg-secondary text-gh-text border-t border-gh-border mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-gh-text">Adresse</h3>
+                    <div class="space-y-2 text-gh-text-secondary">
+                        <p>MADAGASCAR</p>
+                        <p>Antananarivo - 101</p>
+                        <p>Lot IVC 6 - Ambomitsangana</p>
+                        <p>B.P.78</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-gh-text">Contact</h3>
+                    <div class="space-y-2">
+                        <a href="tel:+261 20 22 600 57" class="text-gh-text-secondary hover:text-primary transition-colors duration-200 block">Tél : +261 20 22 600 57</a>
+                        <a href="mailto:cntemad@cntemad.com" class="text-gh-text-secondary hover:text-primary transition-colors duration-200 block">Email : cntemad@cntemad.com</a>
+                        <a href="#" class="text-gh-text-secondary hover:text-primary transition-colors duration-200 block">Facebook : CNTEMAD Officiel</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gh-border mt-8 pt-8 text-center">
+                <p class="text-gh-text-muted">&copy; 2024 CNTEMAD. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const levelSections = document.querySelectorAll('.level-section');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active', 'bg-primary');
+                    btn.classList.add('bg-gh-bg-tertiary', 'hover:bg-gh-border', 'border', 'border-gh-border');
+                });
+
+                // Add active class to clicked button
+                button.classList.add('active', 'bg-primary');
+                button.classList.remove('bg-gh-bg-tertiary', 'hover:bg-gh-border', 'border', 'border-gh-border');
+
+                const filter = button.getAttribute('data-filter');
+
+                // Show/hide sections based on filter
+                if (filter === 'all') {
+                    levelSections.forEach(section => {
+                        section.style.display = 'block';
+                    });
+                } else {
+                    // For now, show all sections since we only have computer science data
+                    // In a real implementation, you would filter based on the subject
+                    levelSections.forEach(section => {
+                        section.style.display = 'block';
+                    });
+                }
+            });
+        });
+    </script>
+</body>
 </html>

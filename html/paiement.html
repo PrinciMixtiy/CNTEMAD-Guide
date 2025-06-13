@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#58a6ff',
+                        secondary: '#1f6feb',
+                        accent: '#56d364',
+                        warning: '#ffa657',
+                        purple: '#a5a3ff',
+                        'gh-bg': '#0d1117',
+                        'gh-bg-secondary': '#161b22',
+                        'gh-bg-tertiary': '#21262d',
+                        'gh-border': '#30363d',
+                        'gh-text': '#f0f6fc',
+                        'gh-text-secondary': '#8b949e',
+                        'gh-text-muted': '#656d76',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>CNTEMAD - Modalités de Paiement</title>
+</head>
+<body class="bg-gh-bg min-h-screen text-gh-text">
+    <!-- Header -->
+    <header class="bg-gh-bg-secondary shadow-xl border-b border-gh-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-primary">CNTEMAD</h1>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Accueil</a>
+                    <a href="filieres.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Filières</a>
+                    <a href="cursus.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Cursus</a>
+                    <a href="modalites.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Modalités</a>
+                    <a href="atomes.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Livres</a>
+                    <a href="inscription.html" class="text-gh-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Inscription</a>
+                    <a href="paiement.html" class="text-primary px-3 py-2 rounded-md text-sm font-medium bg-gh-bg-tertiary border border-gh-border">Paiement</a>
+                </nav>
+
+                <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gh-text-secondary hover:text-primary hover:bg-gh-bg-tertiary transition-colors duration-200">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden hidden bg-gh-bg-secondary border-t border-gh-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Accueil</a>
+                <a href="filieres.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Filières</a>
+                <a href="cursus.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Cursus</a>
+                <a href="modalites.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Modalités</a>
+                <a href="atomes.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Livres</a>
+                <a href="inscription.html" class="text-gh-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Inscription</a>
+                <a href="paiement.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium bg-gh-bg-tertiary border border-gh-border">Paiement</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Page Title -->
+        <div class="text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-gh-text mb-4">MODALITÉS DE PAIEMENT DES FRAIS DE SCOLARITÉ</h1>
+            <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+        </div>
+
+        <!-- NOUVEAUTÉ 2025 Section -->
+        <div class="bg-gradient-to-r from-gh-bg-tertiary to-gh-bg-secondary border border-accent rounded-xl p-6 md:p-8 mb-8 shadow-xl">
+            <div class="flex items-center mb-4">
+                <span class="bg-accent text-gh-bg px-3 py-1 rounded-full text-sm font-bold mr-3">NOUVEAUTÉ 2025</span>
+                <h2 class="text-xl md:text-2xl font-bold text-accent">Modalité de paiement plus souple et accessible</h2>
+            </div>
+            
+            <p class="text-gh-text-secondary mb-6 leading-relaxed">
+                Pour faciliter l'accès à l'enseignement supérieur, il est désormais possible de régler les frais en trois tranches :
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-4 mb-6">
+                <div class="bg-gh-bg-secondary rounded-lg p-4 border border-gh-border shadow-sm hover:border-accent transition-colors duration-200">
+                    <div class="flex items-center mb-2">
+                        <span class="w-8 h-8 bg-accent text-gh-bg rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
+                        <h3 class="font-semibold text-accent">1ère tranche</h3>
+                    </div>
+                    <p class="text-gh-text-secondary text-sm">À l'inscription</p>
+                </div>
+                
+                <div class="bg-gh-bg-secondary rounded-lg p-4 border border-gh-border shadow-sm hover:border-accent transition-colors duration-200">
+                    <div class="flex items-center mb-2">
+                        <span class="w-8 h-8 bg-accent text-gh-bg rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
+                        <h3 class="font-semibold text-accent">2e tranche</h3>
+                    </div>
+                    <p class="text-gh-text-secondary text-sm">À régler avant fin août 2025</p>
+                </div>
+                
+                <div class="bg-gh-bg-secondary rounded-lg p-4 border border-gh-border shadow-sm hover:border-accent transition-colors duration-200">
+                    <div class="flex items-center mb-2">
+                        <span class="w-8 h-8 bg-accent text-gh-bg rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
+                        <h3 class="font-semibold text-accent">3e tranche</h3>
+                    </div>
+                    <p class="text-gh-text-secondary text-sm">À régler avant fin août 2025</p>
+                </div>
+            </div>
+            
+            <div class="bg-gh-bg-tertiary border border-warning rounded-lg p-4 mb-4">
+                <div class="flex items-center">
+                    <span class="text-2xl mr-3">🎁</span>
+                    <p class="text-warning font-medium">
+                        Vous avez également la possibilité de payer la totalité dès l'inscription, si cela vous convient.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bg-gh-bg-tertiary border border-primary rounded-lg p-4">
+                <div class="flex items-start">
+                    <span class="text-xl mr-3 mt-1">📌</span>
+                    <div class="text-primary">
+                        <p class="font-medium mb-2">Les frais d'inscription pour chaque mention sont présentés dans les tableaux ci-dessous.</p>
+                        <p class="text-sm"><strong>NB:</strong> Les quitus doivent être récupérés auprès des CRTE avant de procéder aux versements auprès des banques. Les numéros de compte vous seront communiqués.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fee Schedule Tables Section -->
+        <div class="bg-gh-bg-secondary rounded-xl shadow-xl border border-gh-border p-6 md:p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gh-text mb-8 text-center">MODALITÉS DE PAIEMENT DES FRAIS DE SCOLARITÉ</h2>
+            
+            <div class="space-y-12">
+                <!-- COMMERCE -->
+                <div>
+                    <h3 class="text-xl font-bold text-primary mb-4 bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">COMMERCE</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-xs border-collapse border border-gh-border bg-gh-bg-tertiary rounded-lg overflow-hidden">
+                            <thead>
+                                <tr class="bg-gh-bg">
+                                    <th class="border border-gh-border p-2 text-left text-gh-text">Niveau</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Nombre EC</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit pour un EC (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">TOTAL Droit EC (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit d'inscription (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit d'examen (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">TOTAL Frais de scolarité (Ar)</th>
+                                    <th class="border border-gh-border p-2 bg-accent text-gh-bg" colspan="2">Tranche 1</th>
+                                    <th class="border border-gh-border p-2 bg-warning text-gh-bg" colspan="2">Tranche 2</th>
+                                    <th class="border border-gh-border p-2 bg-red-500 text-white" colspan="2">Tranche 3</th>
+                                </tr>
+                                <tr class="bg-gh-bg-secondary">
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1 bg-accent bg-opacity-20 text-accent">Nombre d'EC de la tranche 1</th>
+                                    <th class="border border-gh-border p-1 bg-accent bg-opacity-20 text-accent">Frais de la tranche 1</th>
+                                    <th class="border border-gh-border p-1 bg-warning bg-opacity-20 text-warning">Nombre d'EC de la tranche 2</th>
+                                    <th class="border border-gh-border p-1 bg-warning bg-opacity-20 text-warning">Frais de la tranche 2</th>
+                                    <th class="border border-gh-border p-1 bg-red-500 bg-opacity-20 text-red-400">Nombre d'EC de la tranche 3</th>
+                                    <th class="border border-gh-border p-1 bg-red-500 bg-opacity-20 text-red-400">Frais de la tranche 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L1</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">12</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">30 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">360 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">430 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">145 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">145 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">140 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L2</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">14</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">35 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">490 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">560 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">5</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">190 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">5</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">190 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">180 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L3</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">13</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">40 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">520 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">590 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">5</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">200 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">200 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">190 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">M1</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">10</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">450 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">520 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">175 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">175 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">170 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">M2</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">9</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">50 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">450 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">520 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">175 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">175 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">170 000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- DROIT -->
+                <div>
+                    <h3 class="text-xl font-bold text-primary mb-4 bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">DROIT</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-xs border-collapse border border-gh-border bg-gh-bg-tertiary rounded-lg overflow-hidden">
+                            <thead>
+                                <tr class="bg-gh-bg">
+                                    <th class="border border-gh-border p-2 text-left text-gh-text">Niveau</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Nombre EC</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit pour un EC (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">TOTAL Droit EC (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit d'inscription (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit d'examen (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">TOTAL Frais de scolarité (Ar)</th>
+                                    <th class="border border-gh-border p-2 bg-accent text-gh-bg" colspan="2">Tranche 1</th>
+                                    <th class="border border-gh-border p-2 bg-warning text-gh-bg" colspan="2">Tranche 2</th>
+                                    <th class="border border-gh-border p-2 bg-red-500 text-white" colspan="2">Tranche 3</th>
+                                </tr>
+                                <tr class="bg-gh-bg-secondary">
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1 bg-accent bg-opacity-20 text-accent">Nombre d'EC de la tranche 1</th>
+                                    <th class="border border-gh-border p-1 bg-accent bg-opacity-20 text-accent">Frais de la tranche 1</th>
+                                    <th class="border border-gh-border p-1 bg-warning bg-opacity-20 text-warning">Nombre d'EC de la tranche 2</th>
+                                    <th class="border border-gh-border p-1 bg-warning bg-opacity-20 text-warning">Frais de la tranche 2</th>
+                                    <th class="border border-gh-border p-1 bg-red-500 bg-opacity-20 text-red-400">Nombre d'EC de la tranche 3</th>
+                                    <th class="border border-gh-border p-1 bg-red-500 bg-opacity-20 text-red-400">Frais de la tranche 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L1</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">10</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">30 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">300 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">370 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">125 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">125 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">120 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L2</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">10</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">35 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">350 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">420 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">140 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">140 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">140 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L3 PU/PR</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">11</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">40 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">440 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">510 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">170 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">170 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">170 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">M1 PU/PR</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">11</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">495 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">565 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">190 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">190 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">185 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">M2 PU/PR</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">9</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">50 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">450 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">520 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">175 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">175 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">170 000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- GESTION -->
+                <div>
+                    <h3 class="text-xl font-bold text-accent mb-4 bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">GESTION</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-xs border-collapse border border-gh-border bg-gh-bg-tertiary rounded-lg overflow-hidden">
+                            <thead>
+                                <tr class="bg-gh-bg">
+                                    <th class="border border-gh-border p-2 text-left text-gh-text">Niveau</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Nombre EC</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit pour un EC (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">TOTAL Droit EC (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit d'inscription (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit d'examen (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">TOTAL Frais de scolarité (Ar)</th>
+                                    <th class="border border-gh-border p-2 bg-accent text-gh-bg" colspan="2">Tranche 1</th>
+                                    <th class="border border-gh-border p-2 bg-warning text-gh-bg" colspan="2">Tranche 2</th>
+                                    <th class="border border-gh-border p-2 bg-red-500 text-white" colspan="2">Tranche 3</th>
+                                </tr>
+                                <tr class="bg-gh-bg-secondary">
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1 bg-accent bg-opacity-20 text-accent">Nombre d'EC de la tranche 1</th>
+                                    <th class="border border-gh-border p-1 bg-accent bg-opacity-20 text-accent">Frais de la tranche 1</th>
+                                    <th class="border border-gh-border p-1 bg-warning bg-opacity-20 text-warning">Nombre d'EC de la tranche 2</th>
+                                    <th class="border border-gh-border p-1 bg-warning bg-opacity-20 text-warning">Frais de la tranche 2</th>
+                                    <th class="border border-gh-border p-1 bg-red-500 bg-opacity-20 text-red-400">Nombre d'EC de la tranche 3</th>
+                                    <th class="border border-gh-border p-1 bg-red-500 bg-opacity-20 text-red-400">Frais de la tranche 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L1</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">12</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">30 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">360 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">430 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">145 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">145 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">140 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L2 FCA</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">11</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">35 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">385 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">455 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">155 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">155 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">145 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L3 MG</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">11</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">40 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">440 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">510 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">170 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">170 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">170 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">M1 FCA</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">11</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">495 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">565 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">190 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">190 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">185 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">M1 MG</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">10</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">450 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">520 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">175 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">175 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">170 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">M2 FCA</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">10</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">50 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">500 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">570 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">190 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">190 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">190 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">M2 MG</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">11</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">50 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">550 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">620 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">210 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">210 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">200 000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- ÉCONOMIE -->
+                <div>
+                    <h3 class="text-xl font-bold text-accent mb-4 bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">ÉCONOMIE</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-xs border-collapse border border-gh-border bg-gh-bg-tertiary rounded-lg overflow-hidden">
+                            <thead>
+                                <tr class="bg-gh-bg">
+                                    <th class="border border-gh-border p-2 text-left text-gh-text">Niveau</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Nombre EC</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit pour un EC (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">TOTAL Droit EC (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit d'inscription (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit d'examen (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">TOTAL Frais de scolarité (Ar)</th>
+                                    <th class="border border-gh-border p-2 bg-accent text-gh-bg" colspan="2">Tranche 1</th>
+                                    <th class="border border-gh-border p-2 bg-warning text-gh-bg" colspan="2">Tranche 2</th>
+                                    <th class="border border-gh-border p-2 bg-red-500 text-white" colspan="2">Tranche 3</th>
+                                </tr>
+                                <tr class="bg-gh-bg-secondary">
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1 bg-accent bg-opacity-20 text-accent">Nombre d'EC de la tranche 1</th>
+                                    <th class="border border-gh-border p-1 bg-accent bg-opacity-20 text-accent">Frais de la tranche 1</th>
+                                    <th class="border border-gh-border p-1 bg-warning bg-opacity-20 text-warning">Nombre d'EC de la tranche 2</th>
+                                    <th class="border border-gh-border p-1 bg-warning bg-opacity-20 text-warning">Frais de la tranche 2</th>
+                                    <th class="border border-gh-border p-1 bg-red-500 bg-opacity-20 text-red-400">Nombre d'EC de la tranche 3</th>
+                                    <th class="border border-gh-border p-1 bg-red-500 bg-opacity-20 text-red-400">Frais de la tranche 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L1</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">13</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">30 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">390 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">460 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">5</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">155 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">155 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">150 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L2</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">12</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">35 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">420 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">490 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">165 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">165 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">160 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L3</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">9</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">40 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">360 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">430 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">145 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">145 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">140 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">M1 DAD/EPE</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">7</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">315 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">385 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">130 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">2</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">130 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">2</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">125 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">M2 DAD/EPE</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">7</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">50 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">350 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">420 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">140 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">2</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">140 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">2</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">140 000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- COMMUNICATION -->
+                <div>
+                    <h3 class="text-xl font-bold text-primary mb-4 bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">COMMUNICATION</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-xs border-collapse border border-gh-border bg-gh-bg-tertiary rounded-lg overflow-hidden">
+                            <thead>
+                                <tr class="bg-gh-bg">
+                                    <th class="border border-gh-border p-2 text-left text-gh-text">Niveau</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Nombre EC</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit pour un EC (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">TOTAL Droit EC (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit d'inscription (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit d'examen (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">TOTAL Frais de scolarité (Ar)</th>
+                                    <th class="border border-gh-border p-2 bg-accent text-gh-bg" colspan="2">Tranche 1</th>
+                                    <th class="border border-gh-border p-2 bg-warning text-gh-bg" colspan="2">Tranche 2</th>
+                                    <th class="border border-gh-border p-2 bg-red-500 text-white" colspan="2">Tranche 3</th>
+                                </tr>
+                                <tr class="bg-gh-bg-secondary">
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1 bg-accent bg-opacity-20 text-accent">Nombre d'EC de la tranche 1</th>
+                                    <th class="border border-gh-border p-1 bg-accent bg-opacity-20 text-accent">Frais de la tranche 1</th>
+                                    <th class="border border-gh-border p-1 bg-warning bg-opacity-20 text-warning">Nombre d'EC de la tranche 2</th>
+                                    <th class="border border-gh-border p-1 bg-warning bg-opacity-20 text-warning">Frais de la tranche 2</th>
+                                    <th class="border border-gh-border p-1 bg-red-500 bg-opacity-20 text-red-400">Nombre d'EC de la tranche 3</th>
+                                    <th class="border border-gh-border p-1 bg-red-500 bg-opacity-20 text-red-400">Frais de la tranche 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L1</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">10</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">30 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">300 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">370 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">125 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">125 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">120 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L2</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">9</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">35 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">315 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">385 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">130 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">130 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">125 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L3</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">13</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">40 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">520 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">590 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">5</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">200 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">200 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">190 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">M1 CDO/MU</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">9</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">405 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">475 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">160 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">160 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">155 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">M2 CDO/MU</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">8</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">50 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">400 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">470 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">160 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">160 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">2</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">150 000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- INFORMATIQUE -->
+                <div>
+                    <h3 class="text-xl font-bold text-accent mb-4 bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">INFORMATIQUE</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-xs border-collapse border border-gh-border bg-gh-bg-tertiary rounded-lg overflow-hidden">
+                            <thead>
+                                <tr class="bg-gh-bg">
+                                    <th class="border border-gh-border p-2 text-left text-gh-text">Niveau</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Nombre EC</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit pour un EC (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">TOTAL Droit EC (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit d'inscription (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit d'examen (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">TOTAL Frais de scolarité (Ar)</th>
+                                    <th class="border border-gh-border p-2 bg-accent text-gh-bg" colspan="2">Tranche 1</th>
+                                    <th class="border border-gh-border p-2 bg-warning text-gh-bg" colspan="2">Tranche 2</th>
+                                    <th class="border border-gh-border p-2 bg-red-500 text-white" colspan="2">Tranche 3</th>
+                                </tr>
+                                <tr class="bg-gh-bg-secondary">
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1 bg-accent bg-opacity-20 text-accent">Nombre d'EC de la tranche 1</th>
+                                    <th class="border border-gh-border p-1 bg-accent bg-opacity-20 text-accent">Frais de la tranche 1</th>
+                                    <th class="border border-gh-border p-1 bg-warning bg-opacity-20 text-warning">Nombre d'EC de la tranche 2</th>
+                                    <th class="border border-gh-border p-1 bg-warning bg-opacity-20 text-warning">Frais de la tranche 2</th>
+                                    <th class="border border-gh-border p-1 bg-red-500 bg-opacity-20 text-red-400">Nombre d'EC de la tranche 3</th>
+                                    <th class="border border-gh-border p-1 bg-red-500 bg-opacity-20 text-red-400">Frais de la tranche 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L1</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">13</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">30 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">390 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">460 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">5</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">155 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">155 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">150 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L2</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">11</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">35 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">385 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">455 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">155 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">155 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">145 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L3 BDGL</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">13</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">40 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">520 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">590 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">5</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">200 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">200 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">190 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L3 RS</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">11</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">40 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">440 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">510 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">170 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">170 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">170 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">M1</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">11</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">495 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">565 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">190 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">190 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">185 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">M2 BDGL</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">11</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">50 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">550 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">620 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">210 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">210 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">200 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">M2 RS</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">11</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">50 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">550 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">620 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">210 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">210 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">200 000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- GÉNIE INDUSTRIEL -->
+                <div>
+                    <h3 class="text-xl font-bold text-primary mb-4 bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">GÉNIE INDUSTRIEL</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-xs border-collapse border border-gh-border bg-gh-bg-tertiary rounded-lg overflow-hidden">
+                            <thead>
+                                <tr class="bg-gh-bg">
+                                    <th class="border border-gh-border p-2 text-left text-gh-text">Niveau</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Nombre EC</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit pour un EC (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">TOTAL Droit EC (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit d'inscription (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit d'examen (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">TOTAL Frais de scolarité (Ar)</th>
+                                    <th class="border border-gh-border p-2 bg-accent text-gh-bg" colspan="2">Tranche 1</th>
+                                    <th class="border border-gh-border p-2 bg-warning text-gh-bg" colspan="2">Tranche 2</th>
+                                    <th class="border border-gh-border p-2 bg-red-500 text-white" colspan="2">Tranche 3</th>
+                                </tr>
+                                <tr class="bg-gh-bg-secondary">
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1 bg-accent bg-opacity-20 text-accent">Nombre d'EC de la tranche 1</th>
+                                    <th class="border border-gh-border p-1 bg-accent bg-opacity-20 text-accent">Frais de la tranche 1</th>
+                                    <th class="border border-gh-border p-1 bg-warning bg-opacity-20 text-warning">Nombre d'EC de la tranche 2</th>
+                                    <th class="border border-gh-border p-1 bg-warning bg-opacity-20 text-warning">Frais de la tranche 2</th>
+                                    <th class="border border-gh-border p-1 bg-red-500 bg-opacity-20 text-red-400">Nombre d'EC de la tranche 3</th>
+                                    <th class="border border-gh-border p-1 bg-red-500 bg-opacity-20 text-red-400">Frais de la tranche 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L1</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">14</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">30 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">420 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">490 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">5</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">165 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">5</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">165 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">160 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L2</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">13</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">35 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">455 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">525 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">5</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">175 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">175 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">175 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L3 GEI/GIM</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">13</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">40 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">520 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">590 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">5</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">200 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">200 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">190 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">M1 PRM</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">11</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">495 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">565 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">190 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">190 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">3</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">185 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">M2 GEI</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">12</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">50 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">600 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">670 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">225 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">225 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">220 000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- TÉLÉCOMMUNICATION -->
+                <div>
+                    <h3 class="text-xl font-bold text-primary mb-4 bg-gh-bg-tertiary p-3 rounded-lg border border-gh-border">TÉLÉCOMMUNICATION</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-xs border-collapse border border-gh-border bg-gh-bg-tertiary rounded-lg overflow-hidden">
+                            <thead>
+                                <tr class="bg-gh-bg">
+                                    <th class="border border-gh-border p-2 text-left text-gh-text">Niveau</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Nombre EC</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit pour un EC (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">TOTAL Droit EC (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit d'inscription (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">Droit d'examen (Ar)</th>
+                                    <th class="border border-gh-border p-2 text-gh-text">TOTAL Frais de scolarité (Ar)</th>
+                                    <th class="border border-gh-border p-2 bg-accent text-gh-bg" colspan="2">Tranche 1</th>
+                                    <th class="border border-gh-border p-2 bg-warning text-gh-bg" colspan="2">Tranche 2</th>
+                                    <th class="border border-gh-border p-2 bg-red-500 text-white" colspan="2">Tranche 3</th>
+                                </tr>
+                                <tr class="bg-gh-bg-secondary">
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1"></th>
+                                    <th class="border border-gh-border p-1 bg-accent bg-opacity-20 text-accent">Nombre d'EC de la tranche 1</th>
+                                    <th class="border border-gh-border p-1 bg-accent bg-opacity-20 text-accent">Frais de la tranche 1</th>
+                                    <th class="border border-gh-border p-1 bg-warning bg-opacity-20 text-warning">Nombre d'EC de la tranche 2</th>
+                                    <th class="border border-gh-border p-1 bg-warning bg-opacity-20 text-warning">Frais de la tranche 2</th>
+                                    <th class="border border-gh-border p-1 bg-red-500 bg-opacity-20 text-red-400">Nombre d'EC de la tranche 3</th>
+                                    <th class="border border-gh-border p-1 bg-red-500 bg-opacity-20 text-red-400">Frais de la tranche 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L1</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">15</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">30 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">450 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">520 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">5</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">175 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">5</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">175 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">5</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">170 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L2 GRT/GR</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">14</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">35 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">490 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">560 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">5</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">190 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">5</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">190 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">180 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">L3 GRT/GR</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">13</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">40 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">520 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">590 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">5</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">200 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">200 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">190 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">M1 GRT/GR</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">12</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">540 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">610 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">205 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">205 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">200 000</td>
+                                </tr>
+                                <tr class="hover:bg-gh-bg transition-colors duration-200">
+                                    <td class="border border-gh-border p-2 font-medium text-gh-text">M2 GRT/GR</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">12</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">50 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">600 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">45 000</td>
+                                    <td class="border border-gh-border p-2 text-center text-gh-text-secondary">25 000</td>
+                                    <td class="border border-gh-border p-2 text-center font-bold text-primary">670 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-accent bg-opacity-20 text-accent">225 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-warning bg-opacity-20 text-warning">225 000</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">4</td>
+                                    <td class="border border-gh-border p-2 text-center bg-red-500 bg-opacity-20 text-red-400">220 000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Méthodes de paiement -->
+        <div class="bg-gh-bg-secondary rounded-xl shadow-xl border border-gh-border p-6 md:p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gh-text mb-6 text-center">MÉTHODES DE PAIEMENT</h2>
+            
+            <div class="space-y-6">
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-primary mb-4">Paiement bancaire</h3>
+                    <div class="space-y-4 text-gh-text-secondary">
+                        <p class="leading-relaxed">
+                            Tous les paiements doivent être effectués auprès de la banque assignée à chaque Centre Régional du CNTEMAD (CRTE). Les numéros de compte vous seront communiqués lors de la récupération de votre quitus de paiement.
+                        </p>
+                        <div class="bg-gh-bg border border-warning rounded-lg p-4">
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 text-warning mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                                </svg>
+                                <p class="text-warning font-bold">Tout paiement en espèces aux agents du CRTE est strictement interdit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-accent mb-4">Procédure de paiement</h3>
+                    <ol class="space-y-4 text-gh-text-secondary">
+                        <li class="flex items-start">
+                            <span class="w-6 h-6 bg-gh-bg-secondary border border-gh-border rounded-full flex items-center justify-center text-xs font-bold mr-3 flex-shrink-0">1</span>
+                            <p>Récupérer le quitus de paiement auprès du CRTE de votre région</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-6 h-6 bg-gh-bg-secondary border border-gh-border rounded-full flex items-center justify-center text-xs font-bold mr-3 flex-shrink-0">2</span>
+                            <p>Se rendre à la banque partenaire indiquée sur le quitus</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-6 h-6 bg-gh-bg-secondary border border-gh-border rounded-full flex items-center justify-center text-xs font-bold mr-3 flex-shrink-0">3</span>
+                            <p>Effectuer le versement en précisant votre nom et le niveau d'études</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-6 h-6 bg-gh-bg-secondary border border-gh-border rounded-full flex items-center justify-center text-xs font-bold mr-3 flex-shrink-0">4</span>
+                            <p>Conserver soigneusement le reçu de paiement</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-6 h-6 bg-gh-bg-secondary border border-gh-border rounded-full flex items-center justify-center text-xs font-bold mr-3 flex-shrink-0">5</span>
+                            <p>Présenter le reçu au CRTE pour finaliser votre inscription</p>
+                        </li>
+                    </ol>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-primary mb-4">Remarques importantes</h3>
+                    <div class="space-y-4 text-gh-text-secondary">
+                        <p class="leading-relaxed">
+                            Pour tous les droits mentionnés dans les tableaux, aucun remboursement ne sera effectué quel que soit le motif. Le paiement de la totalité des frais d'études (paiement des EC, unités d'enseignement fondamentales et unités d'enseignement complémentaires de chacun des deux (02) semestres) et du droit d'inscription à l'examen, un (01) mois avant les examens conditionne la participation à l'examen final.
+                        </p>
+                        <div class="bg-gh-bg border border-primary rounded-lg p-4">
+                            <h4 class="font-bold text-primary mb-2">Frais supplémentaires pour les niveaux L3 et M2 :</h4>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <h5 class="font-semibold text-accent mb-1">L3</h5>
+                                    <p>Frais de rapport de stage : <span class="font-bold">Ar 60 000</span></p>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-accent mb-1">M2</h5>
+                                    <p>Frais d'encadrement : <span class="font-bold">Ar 150 000</span></p>
+                                    <p>Frais de soutenance : <span class="font-bold">Ar 200 000</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="bg-gh-bg-secondary rounded-xl shadow-xl border border-gh-border p-6 md:p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gh-text mb-6 text-center">QUESTIONS FRÉQUENTES SUR LES PAIEMENTS</h2>
+            
+            <div class="space-y-4">
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-4">
+                    <h3 class="font-bold text-primary mb-2">Quand dois-je effectuer le paiement des frais de scolarité ?</h3>
+                    <p class="text-gh-text-secondary">Le paiement de la première tranche doit être effectué lors de l'inscription. La deuxième et la troisième tranche doivent être réglées avant fin août 2025.</p>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-4">
+                    <h3 class="font-bold text-primary mb-2">Puis-je payer la totalité des frais en une seule fois ?</h3>
+                    <p class="text-gh-text-secondary">Oui, vous avez la possibilité de payer la totalité des frais dès l'inscription si cela vous convient.</p>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-4">
+                    <h3 class="font-bold text-primary mb-2">Comment puis-je obtenir un reçu de paiement ?</h3>
+                    <p class="text-gh-text-secondary">Un reçu de paiement vous sera délivré par la banque lors de votre versement. Ce reçu doit être conservé et présenté au CRTE pour finaliser votre inscription.</p>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-4">
+                    <h3 class="font-bold text-primary mb-2">Que se passe-t-il si je ne paie pas les frais dans les délais ?</h3>
+                    <p class="text-gh-text-secondary">Le paiement de la totalité des frais d'études et du droit d'inscription à l'examen, un (01) mois avant les examens, conditionne la participation à l'examen final. Sans paiement complet, vous ne pourrez pas participer aux examens.</p>
+                </div>
+                
+                <div class="bg-gh-bg-tertiary border border-gh-border rounded-lg p-4">
+                    <h3 class="font-bold text-primary mb-2">Existe-t-il des bourses ou des aides financières ?</h3>
+                    <p class="text-gh-text-secondary">Pour toute information concernant les bourses et aides financières, veuillez vous adresser directement au service administratif du CNTEMAD qui pourra vous renseigner sur les options disponibles.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gh-bg-secondary text-gh-text border-t border-gh-border mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-gh-text">Adresse</h3>
+                <div class="space-y-2 text-gh-text-secondary">
+                    <p>MADAGASCAR</p>
+                    <p>Antananarivo - 101</p>
+                    <p>Lot IVC 6 - Ambomitsangana</p>
+                    <p>B.P.78</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-gh-text">Contact</h3>
+                <div class="space-y-2">
+                    <a href="tel:+261 20 22 600 57" class="text-gh-text-secondary hover:text-primary transition-colors duration-200 block">Tél : +261 20 22 600 57</a>
+                    <a href="mailto:cntemad@cntemad.com" class="text-gh-text-secondary hover:text-primary transition-colors duration-200 block">Email : cntemad@cntemad.com</a>
+                    <a href="#" class="text-gh-text-secondary hover:text-primary transition-colors duration-200 block">Facebook : CNTEMAD Officiel</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-gh-border mt-8 pt-8 text-center">
+            <p class="text-gh-text-muted">&copy; 2024 CNTEMAD. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
